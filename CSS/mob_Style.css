@@ -1,0 +1,108 @@
+/* Mobile */
+@media (max-width: 767px) {
+:root{
+--nav1-h: 30px;
+--nav2-h: 55px;
+--hd-clr-1: #dba431;
+--hd-txt-1: #0D4B4A;
+}
+*{
+    box-sizing: border-box;
+}
+    .container {
+        width: 95vw;
+        padding: 0;
+    }
+
+
+    nav{
+        top: -26px;
+    }
+    .nav1 .container .social a {
+        margin: 0 ;
+        padding: 0 5px;
+    }
+    a[href="mailto:info@hours.com"]{
+
+    }
+
+    .nav2 .container .logoCont img{
+        width: 70px;
+        translate: 0 60%;
+    }
+    img[src="img/text.png"]{
+        width: 60px !important;
+        margin-top: 10px;
+        padding-right: 5px;
+    }
+    
+    
+
+
+    .nav2 .links{
+        display: none !important;
+        flex-direction: column;
+    }
+    .ham{ 
+        display: block; 
+        width: 30px;
+        height: var(--nav2-h);
+        /* border: 1px solid #000; */
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+
+    }
+    .ham span{ 
+        background-color: var(--hd-txt-1);
+        width: 100%;
+        height: 3px; 
+        margin: 1.5px 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    .ham span:nth-child(1){ 
+        top: 35%;
+    }
+    .ham span:nth-child(3){ 
+        top: 65%;
+    }
+
+
+    .ham.active{
+        transform: rotate(0.5turn);
+    }
+
+    .ham.active span:nth-child(1){ 
+        rotate: 45deg;
+        top: 67%;
+    }
+    .ham.active span:nth-child(2){ 
+        width: 0;
+    }
+    .ham.active span:nth-child(3){ 
+        rotate: -45deg;
+        top: 27% !important;
+    }
+
+
+
+    main h1{
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+    main .mainCont{
+        flex-direction: column;
+        width: 100%;
+    }
+    main .mainCont img{
+        width: 70%;
+    }
+
+}
