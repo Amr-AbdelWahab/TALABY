@@ -84,10 +84,13 @@ li {
 
 nav{
     background-color: var(--main-NBG-clr);
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
+
     position: fixed;
     top: 0;
     height: 80px;
     width:100%;
+    z-index: 100;
     /* border: 1px solid #000; */
 }
 nav .container{
@@ -152,11 +155,13 @@ nav ul li a span {
     color: var(--main-NBG-clr);
     position: absolute;
     left: -100%;
+    opacity: 0;
     transition: var(--trans);
 }
 
 nav ul li:hover span {
     left: 0;
+    opacity: 1;
 }
 
 
@@ -170,13 +175,64 @@ main, section {
 main.landing{
     background-image: url(../img/landing.png);
     background-size: cover;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.082);
+}
+.landing{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    /* border: 5px solid #000 !important; */
+}
+
+.landing .item{
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 500px;
+    width: 550px;
+    top: 10rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.landing .item img{
+    position: absolute;
+    /* border: 1px solid #000; */
+    display: inline-block;
+    height: 100%;
+    transition: var(--trans);
+    top: 0;
+    left: 0;
+
 
 }
+.landing .item:hover img[src="img/lnd2.png"] {
+/* opacity: .5; */
+top: -10px;
+left: -20px;
+}
+.landing .item:hover img[src="img/lnd3.png"] {
+/* opacity: .5; */
+top: -15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 section.sec2{
     background-color: var(--main-HD-clr);
     background-color: #E28308;
     transform: skewY(-3deg);
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
 }
 .last{
     height: 150px;
@@ -188,6 +244,8 @@ section.sec2{
 }
 .last p{
     background-color: var(--main-HD-clr);
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
+
     height: 50px;
     line-height: 50px;
     border-radius: 25px;
@@ -207,21 +265,24 @@ section.sec2{
     background-color: var(--main-TXT-clr);
     color: var(--main-NBG-clr);
     padding: 0 2rem;
+    position: absolute;
     display: inline-block;
     width: 100%;
     border-radius: 25px;
     width: 100%;
-    position: absolute;
     left: -100%;
+    opacity: 0;
     transition: var(--trans);
 }
 
 .last p:hover span {
     left: 0;
+    opacity: 1;
 }
 
 footer{
     background-color: var(--main-HD-clr);
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
     height: 200px;
     position: relative;
     
