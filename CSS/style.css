@@ -121,6 +121,10 @@ nav .logo p:nth-child(3){
     font-weight:500 ;
 }
 
+.ham {
+    display: none;
+}
+
 nav ul{
     display: flex;
     justify-content: space-between;
@@ -182,15 +186,23 @@ main.landing{
     justify-content: center;
     align-items: center; */
     position: relative;
-    /* border: 5px solid #000 !important; */
 }
 
-.landing .item{
+.landing .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc( 100vh - 80px);
+    margin-top: 80px;
+}
+
+.landing .container .item{
     position: relative;
     /* border: 1px solid #000; */
-    height: 500px;
+    height: 50vh;
     width: 550px;
-    top: 10rem;
+    width: 40%;
+    /* top: 10rem; */
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -203,8 +215,6 @@ main.landing{
     transition: var(--trans);
     top: 0;
     left: 0;
-
-
 }
 .landing .item:hover img[src="img/lnd2.png"] {
 /* opacity: .5; */
@@ -214,8 +224,74 @@ left: -20px;
 .landing .item:hover img[src="img/lnd3.png"] {
 /* opacity: .5; */
 top: -15px;
+}
+
+
+.landing .tard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: ;
+    width: 40%;
+    padding: 1rem;
+    /* border: 1px solid #000; */
+}
+.landing .tard h1 {
+    font-size: 2rem;
+    padding: inherit;
+    margin: 1rem;
+    /* border: 1px solid #000; */
+}
+.landing .tard input {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: inherit;
+    margin: 1rem;
+    border: none;
+    border-radius: 3rem;
+}
+.landing .tard input:focus {
+    /* border-style: dashed; */
+}
+.landing .tard input:hover {
+    transform: scale(1.1);
+}
+
+.landing .tard button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: inherit;
+    margin: 1rem;
+    background-color: var(--main-HD-clr);
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.landing .tard button:hover {
+    transform: scale(1.1);
+}
+
+.landing .tard .appLink {
+    width: calc( 100% - 6rem);
+    display: flex;
+    justify-content: space-between;
+    /* padding: inherit; */
+    margin: 1rem;
 
 }
+.landing .tard img {
+    height: 50px;
+    cursor: pointer;
+}
+.landing .tard img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 
 
