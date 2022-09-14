@@ -167,9 +167,14 @@ nav ul li:hover span {
     left: 0;
     opacity: 1;
 }
+.overlay{
+    display: none;
+}
 
 
-
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
 
 main, section {
@@ -190,7 +195,7 @@ main.landing{
 
 .landing .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: calc( 100vh - 80px);
     margin-top: 80px;
@@ -199,31 +204,32 @@ main.landing{
 .landing .container .item{
     position: relative;
     /* border: 1px solid #000; */
-    height: 50vh;
+    height: 60vh;
     width: 550px;
     width: 40%;
-    /* top: 10rem; */
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
 }
 .landing .item img{
     position: absolute;
-    /* border: 1px solid #000; */
+    /* border: 1px solid rgb(5, 233, 81); */
     display: inline-block;
     height: 100%;
     transition: var(--trans);
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
 }
 .landing .item:hover img[src="img/lnd2.png"] {
-/* opacity: .5; */
-top: -10px;
-left: -20px;
+/* top: -10px;
+left: -20px; */
+top: 45% !important;
+left: 45%;
 }
 .landing .item:hover img[src="img/lnd3.png"] {
-/* opacity: .5; */
-top: -15px;
+/* top: -15px; */
+top: 44%;
 }
 
 
@@ -233,21 +239,22 @@ top: -15px;
     justify-content: space-between;
     align-items: flex-start;
     margin-right: ;
-    width: 40%;
+    width: 30%;
     padding: 1rem;
     /* border: 1px solid #000; */
 }
 .landing .tard h1 {
     font-size: 2rem;
     padding: inherit;
-    margin: 1rem;
+    margin-bottom: 1rem;
     /* border: 1px solid #000; */
 }
 .landing .tard input {
+    width: 90%;
     font-size: 1.2rem;
     font-weight: 600;
     padding: inherit;
-    margin: 1rem;
+    margin-bottom: 1rem;
     border: none;
     border-radius: 3rem;
 }
@@ -262,7 +269,7 @@ top: -15px;
     font-size: 1.2rem;
     font-weight: 600;
     padding: inherit;
-    margin: 1rem;
+    margin-bottom: 1rem;
     background-color: var(--main-HD-clr);
     border: none;
     border-radius: 3rem;
@@ -273,21 +280,84 @@ top: -15px;
 }
 
 .landing .tard .appLink {
-    width: calc( 100% - 6rem);
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    /* padding: inherit; */
-    margin: 1rem;
-
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
 }
-.landing .tard img {
-    height: 50px;
+
+.landing .tard a {
+    display: inline-block;
+    width: 45%;
+    /* border: 3px solid rgb(17, 247, 105); */
+    cursor: pointer;
+}
+.landing .tard img{
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 100%;
+    /* border: 1px solid rgb(247, 17, 17); */
     cursor: pointer;
 }
 .landing .tard img:hover {
     transform: scale(1.1);
 }
 
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+
+
+section.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.sec1 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------------------- */
+section.sec1 .container .item{
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 60vh;
+    width: 550px;
+    width: 40%;
+}
+section.sec1 .container .item img{
+    position: absolute;
+    /* border: 1px solid rgb(5, 233, 81); */
+    display: inline-block;
+    height: 100%;
+    transition: var(--trans);
+    /* top: 0;
+    left: 0; */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+section.sec1 .container .item:hover img[src="img/lnd2.png"] {
+/* top: -10px;
+left: -20px; */
+top: 45% !important;
+left: 45%;
+}
+section.sec1 .container .item:hover img[src="img/lnd3.png"] {
+/* top: -15px; */
+top: 44%;
+}
+
+/* ---------------------------------------- */
 
 
 
@@ -304,6 +374,36 @@ top: -15px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+section.sec1 h2{
+    color: var(--main-HD-clr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 section.sec2{
     background-color: var(--main-HD-clr);
     background-color: #E28308;

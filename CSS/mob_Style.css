@@ -20,7 +20,8 @@
     nav{
         width: 100%;
         height: 50px;
-        position: sticky;
+        position: fixed;
+        top: 0;
     }
 
     nav .container{
@@ -153,22 +154,37 @@
     display: none !important;
 }
 
+.overlay{
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000009d;
+}
 
-    main.landing {
-        /* width: 90vw; */
-    }
+
+
+main.landing{
+    background-image: url(../img/landing.png);
+    background-size: 200vh;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.082);
+}
 
     main, section, footer, .last {
         display: none;
     }
     main{
         display: block;
+
     }
 
     .landing .container{
         flex-direction: column;
-        height: 1800px;
-        margin-top: 40px;
+        height: 100vh;
+        margin-top: 50px;
+        padding-top: 50px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -179,7 +195,7 @@
 
 
     .landing .item{
-        height: 14% !important;
+        height: 40% !important;
         width: 100% !important;
         margin-left:10px !important;
     }
@@ -187,9 +203,19 @@
         /* border: 1px solid #000; */
         height: 100% !important;
         margin-left: auto !important;
-        margin-left: 10px !important;
         margin-right: auto !important;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
     }
+    .landing .item:hover img[src="img/lnd2.png"] {
+        top: 45% !important;
+        left: 45%;
+        }
+        .landing .item:hover img[src="img/lnd3.png"] {
+        top: 44%;
+        }
+        
 
     .landing .tard{
             /* border: 1px solid #000; */
@@ -202,13 +228,14 @@
     }
     .landing .tard h1{
         font-size: 1.2rem;
-        margin-bottom: 0px;
+        margin-bottom: 1rem;
+        text-align: center;
     }
     .landing .tard input,
     .landing .tard button {
         font-size: 1.0rem;
         padding: .7rem;
-        margin-bottom: 0px;
+        margin-bottom: 1rem;
     }
 
 
