@@ -70,6 +70,9 @@
     }
     .ham span:nth-child(2){ 
         top: 50%;
+        width: 70%;
+        transform: translate( 0%, -50%);
+        left: 0;
         background-color: var(--main-HD-clr);
     }
     .ham span:nth-child(3){ 
@@ -169,20 +172,13 @@
 main.landing{
     background-image: url(../img/landing.png);
     background-size: 200vh;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.082);
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
 }
 
-    main, section, footer, .last {
-        display: none;
-    }
-    main{
-        display: block;
-
-    }
 
     .landing .container{
         flex-direction: column;
-        height: 100vh;
+        height: calc( 100vh - 50px) !important;
         margin-top: 50px;
         padding-top: 50px;
         width: 100%;
@@ -249,8 +245,84 @@ main.landing{
     }
 
 
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.sec1{
+    display: block !important;
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
 
 
+}
+section.sec1 .container{
+    flex-direction: column;
+    height: calc( 100vh) !important;
+    /* margin-top: 50px; */
+    padding-top:50px ;
+    justify-content: flex-start;
+    /* border: 1px solid #000; */
+    }
+/* ---------------------------------------- */
+section.sec1 .container .item{
+        height: 30% !important;
+        min-width: calc( 40vh );
+        /* border: 1px solid rgb(0, 140, 255); */
+    }
+    section.sec1 .container .item img{
+        /* border: 1px solid rgb(204, 20, 20); */
+    }
+/* ---------------------------------------- */
+.sec1 .description{
+    display: flex !important;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    width: calc( 40vh );
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+    .sec1 .description h2{
+        font-size: 1.2rem;
+        margin: 0;
+        padding-right: 1rem ;
+        /* margin-right: -4rem; */
+        margin-bottom: 1rem;
+    }
+    .sec1 .description ul li{
+        font-size: 1rem;
+        margin-right: -1rem !important;
+        margin-bottom: 0.5rem;
+    }
+    .sec1 .description ul i{
+        font-size: 0.5rem !important;
+        margin-left: 0.5rem !important;
+    }
+    
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+
+section, footer, .last, .description {
+    display: none !important;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
 
 
@@ -270,3 +342,25 @@ main.landing{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
