@@ -82,6 +82,11 @@ li {
 
 /* MY STYLES */
 
+
+/* ---------------------------------------- */
+/* ------NAV BAR------------------------ */
+/* ---------------------------------------- */
+
 nav{
     background-color: var(--main-NBG-clr);
     box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
@@ -138,7 +143,6 @@ nav ul li{
 }
 nav ul li a,
 nav ul li a span {
-
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -150,8 +154,6 @@ nav ul li a span {
     line-height: 35px;
     position: relative;
     overflow: hidden;
-
-    /* border: 1px solid #000; */
 }
 
 nav ul li a span {
@@ -162,7 +164,6 @@ nav ul li a span {
     opacity: 0;
     transition: var(--trans);
 }
-
 nav ul li:hover span {
     left: 0;
     opacity: 1;
@@ -171,11 +172,9 @@ nav ul li:hover span {
     display: none;
 }
 
-
 /* ---------------------------------------- */
+/* ------LANDING------------------------ */
 /* ---------------------------------------- */
-/* ---------------------------------------- */
-
 
 main, section {
     min-height: 100vh;
@@ -287,7 +286,6 @@ top: 44%;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     position: relative;
-    display: flex;
 }
 
 .landing .tard a {
@@ -309,10 +307,8 @@ top: 44%;
 }
 
 /* ---------------------------------------- */
+/* ------SECTION 1----------------------- */
 /* ---------------------------------------- */
-/* ---------------------------------------- */
-
-
 
 section.sec1{
     display: flex;
@@ -324,8 +320,6 @@ section.sec1 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc( 100vh - 80px);
-    /* margin-top: 80px; */
 }
 
 /* ---------------------------------------- */
@@ -382,53 +376,77 @@ top: 44%;
     color: var(--main-HD-clr);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------------------------- */
+/* ------SECTION 2----------------------- */
 /* ---------------------------------------- */
-/* ---------------------------------------- */
+
 section.sec2{
     background-color: var(--main-HD-clr);
     background-color: #E28308;
+    margin-top: -7rem;
     transform: skewY(-3deg);
     box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
 }
+section.sec2 .container{
+    transform: skewY(3deg);
+    /* height: 1000px; */
+    /* border: 1px solid #000; */
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+/* ---------------------------------------- */
+
+section.sec2 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+section.sec2 .container h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.features .card {
+    min-width: 30%;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    /* border: 1px solid #000; */
+    border-radius: 50% 50% 2rem 2rem;
+}
+.features .card:hover {
+    background-color: rgba(255, 255, 255, 0.089);
+}
+.features .card img {
+    height: 6rem;
+    text-align: center;
+}
+.features .card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+}
+.features .card p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin: 0 0 1rem;
+}
+
+/* ---------------------------------------- */
+/* ------LAST SECTION------------------------ */
+/* ---------------------------------------- */
+
 .last{
     height: 150px;
     display: flex;
@@ -439,7 +457,7 @@ section.sec2{
 }
 .last p{
     background-color: var(--main-HD-clr);
-    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2); */
 
     height: 50px;
     line-height: 50px;
@@ -475,16 +493,126 @@ section.sec2{
     opacity: 1;
 }
 
+/* ---------------------------------------- */
+/* ------FOOTER------------------------ */
+/* ---------------------------------------- */
+
 footer{
     background-color: var(--main-HD-clr);
     box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
-    height: 200px;
+    height: 270px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
-    
-
 }
 
-footer img{
+footer .cont-foot{
+    height: 200px;
+    width: calc( 100vw - 200px );
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+/* --------------------------- */
+
+footer .links { 
+    /* border: 1px solid #000; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer .links a { 
+    /* border: 1px solid #000; */
+    color: var(--main-TXT-clr);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+footer .links a:hover { 
+    color: var(--main-BG-clr);
+}
+
+
+
+
+/* --------------------------- */
+.social-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid #000; */
+}
+
+.social{
+
+}
+.social a {
+    display: inline-block;
+    margin: .3rem;
+}
+.social i {
+    color: white;
+    font-size: 1.2rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: var(--main-TXT-clr)
+}
+.social a:hover i {
+    border: 2px solid var(--main-BG-clr);
+    color: var(--main-HD-clr);
+}
+.social-footer>a {
+    display: block;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-footer>a  img {
+    display: block;
+    display: flex;
+    justify-content: center;
+    height: 100% !important;
+    width: 100%;
+}
+.social-footer>a:hover  img {
+transform: scale(1.05);
+}
+
+footer p {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-top: 10px;
+    bottom: 0;
+    right: 0;
+    width: calc( 100vw - 200px );
+    /* border: 1px solid #000; */
+    background-color: #ffffff44;
+}
+footer p span:nth-child(1),
+footer p  a {
+    color: var(--main-BG-clr);
+    font-weight: 500;
+}
+footer p span:nth-child(3) {
+    font-weight: 600;
+    margin: 010px;
+}
+
+footer img[src="img/footer-left.png"]{
     display: inline-block;
     height: 100%;
     position: absolute;

@@ -17,6 +17,11 @@
         padding: 0; */
     }
 
+    /* ---------------------------------------- */
+    /* ------NAV BAR------------------------ */
+    /* ---------------------------------------- */
+
+
     nav{
         width: 100%;
         height: 50px;
@@ -167,7 +172,9 @@
     background-color: #0000009d;
 }
 
-
+/* ---------------------------------------- */
+/* ------LANDING------------------------ */
+/* ---------------------------------------- */
 
 main.landing{
     background-image: url(../img/landing.png);
@@ -246,7 +253,7 @@ main.landing{
 
 
 /* ---------------------------------------- */
-/* ---------------------------------------- */
+/* ------SECTION 1----------------------- */
 /* ---------------------------------------- */
 
 .sec1{
@@ -292,6 +299,7 @@ section.sec1 .container .item{
     }
     .sec1 .description ul li{
         font-size: 1rem;
+        font-weight: 600;
         margin-right: -1rem !important;
         margin-bottom: 0.5rem;
     }
@@ -301,17 +309,81 @@ section.sec1 .container .item{
     }
     
 /* ---------------------------------------- */
-/* ---------------------------------------- */
+/* ------SECTION 2----------------------- */
 /* ---------------------------------------- */
 
+    .sec2{
+        display: block !important;
+    }
+    section.sec2 .container h2{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features .card {
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .features .card:hover {
+        background-color: transparent;
+    }
+    .features .card h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 1rem 0 0.5rem;
+    }
 
-section, footer, .last, .description {
-    display: none !important;
+/* ---------------------------------------- */
+/* ------LAST SECTION------------------------ */
+/* ---------------------------------------- */
+
+.last{
+    display: block !important;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+.last p{
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    width: 80% !important;
+    margin: auto;
+    text-align: center;
+
+}
+.last a{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 1rem;
+    border-radius: 15px;
+    position: relative;
+}
+.last a span {
+    padding: 0 1rem;
+    width: 100% !important;
+    border-radius: 15px;
+    width: 100%;
+    left: -100%;
+    opacity: 0;
+    transition: var(--trans);
+    margin: auto;
+}
+
+.last p:hover span {
+    left: 0;
+    opacity: 1;
+    text-align: center;
+
 }
 
 
-    
-
 
 
 
@@ -321,20 +393,68 @@ section, footer, .last, .description {
 
 
 /* ---------------------------------------- */
+/* ------FOOTER------------------------ */
 /* ---------------------------------------- */
-/* ---------------------------------------- */
 
 
 
+footer {
+    height: 100vh !important;
+    height: auto !important;
+    padding-left: 0;
+    padding: 20px;
+    justify-content: flex-start;
+}
+footer>img{
+    display: none !important;
+}
+footer .cont-foot{
+    height: auto;
+    flex-direction: column;
+    width: 100% !important;
+    /* border: 1px solid #000; */
 
+}
+footer .links { 
+}
+footer .links a { 
+margin: 10px 0;
+margin-right: 10px;
+}
+.social-footer{
+    width: 200px;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    /* border: 1px solid #000; */
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social-footer>a {
+    margin-top: 15px;
+}
 
-
-
-
-
-
-
-
+footer p {
+    /* border: 1px solid #000; */
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    bottom: 0;
+    right: 0;
+    width: 100vw ;
+    background-color: #ffffff44;
+}
 
 
 
