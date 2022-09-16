@@ -202,22 +202,6 @@ main.landing{
         width: 100% !important;
         margin-left:10px !important;
     }
-    .landing .item img{
-        /* border: 1px solid #000; */
-        height: 100% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }
-    .landing .item:hover img[src="img/lnd2.png"] {
-        top: 45% !important;
-        left: 45%;
-        }
-        .landing .item:hover img[src="img/lnd3.png"] {
-        top: 44%;
-        }
         
 
     .landing .tard{

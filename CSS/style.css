@@ -220,13 +220,13 @@ main.landing{
     left: 50%;
 
 }
-.landing .item:hover img[src="img/lnd2.png"] {
+.landing .item:hover img[src="img/lnd/lnd2.png"] {
 /* top: -10px;
 left: -20px; */
 top: 45% !important;
 left: 45%;
 }
-.landing .item:hover img[src="img/lnd3.png"] {
+.landing .item:hover img[src="img/lnd/lnd3.png"] {
 /* top: -15px; */
 top: 44%;
 }
@@ -337,11 +337,11 @@ section.sec1 .container .item img{
     top: 50%;
     left: 50%;
 }
-section.sec1 .container .item:hover img[src="img/carMob2.png"] {
+section.sec1 .container .item:hover img[src="img/carMob/carMob2.png"] {
 top: 55% !important;
 left: 45%;
 }
-section.sec1 .container .item:hover img[src="img/carMob3.png"] {
+section.sec1 .container .item:hover img[src="img/carMob/carMob3.png"] {
 top: 44%;
 }
 
