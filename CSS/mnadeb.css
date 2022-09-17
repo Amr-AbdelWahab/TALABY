@@ -1,0 +1,229 @@
+/* ---------------------------------------- */
+/* ------LANDING------------------------ */
+/* ---------------------------------------- */
+
+
+
+.mndob {
+    position: relative;
+    height: 100vh;
+
+}
+.mndob .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc( 100vh - 80px);
+    margin-top: 80px;
+    /* border: 1px solid #000; */
+}
+.mndob .container .item{
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 40vh;
+    width: 550px;
+    width: 40%;
+}
+.mndob .item img{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    transition: var(--trans);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.mndob .item:hover img[src="../img/mnadeb/mnadeb1.png"] {
+    left: 70%;
+    }
+.mndob .item:hover img[src="../img/mnadeb/mnadeb2.png"] {
+    top: 40%;
+    }
+.mndob .item:hover img[src="../img/mnadeb/mnadeb3.png"] {
+    left: 40%;
+    }
+    .go2next{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .go2next:hover h2::after{
+        width: 0%;
+    }
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    :root {
+        --main-BG-clr: #EEEEEE;
+        --main-NBG-clr: #FFFFFF;
+        --main-HD-clr: #F2951C;
+        --main-TXT-clr: #000000;
+        --trans: all 0.25s ease-in-out;
+    }
+    .mndob {
+        height: auto;
+    }
+    .mndob .container{
+        height: auto;
+        justify-content: flex-start
+    }
+    .mndob .container .item{
+        /* border: 1px solid #000; */
+        position: relative;
+        height: 20vh;
+    }
+    .go2next:hover h2::after{
+        width: 0%;
+    }
+    
+}
+
+/* ---------------------------------------- */
+/* ------Mandob Form----------------- */
+/* ------------------------------------- */
+
+.mandobForm .container  {
+    padding-bottom: 4rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+}
+.mandobForm form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+.mandobForm form>[type],
+.mandobForm form .subBtn input{
+    /* border: 1px solid #000; */
+    margin: 10px 0;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.7rem;
+    background-color: var(--main-HD-clr);
+    border-radius: 1.7rem;
+    outline: none;
+    border: none;
+    color: var(--main-TXT-clr);
+}
+.mandobForm form [type]:hover {
+    background-color: #f2951ca4
+}
+.mandobForm form [type]::placeholder {
+    color: var(--main-BG-clr);
+}
+.mandobForm form div.radio {
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.mandobForm form div.radio div {
+    /* border: 1px solid #000; */
+    margin: 5px 10px;
+
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto ;
+}
+.mandobForm form div.radio div input{
+    margin: 0 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.mandobForm form div.radio div label{
+    cursor: pointer;
+    user-select: none;
+}
+.mandobForm form p{
+    font-size: 1.3rem;
+    margin: 10px 0;
+    padding: 1rem;
+    
+}
+
+.mandobForm form .subBtn {
+    text-align: end;
+}
+.mandobForm form .subBtn input {
+    color: var(--main-TXT-clr);
+    border: 3px solid var(--main-BG-clr);
+    width: auto;
+    font-size: 1.2rem;
+    padding: .5rem 1.2rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mandobForm form .subBtn input:hover {
+    transform: scale(1.02);
+    border: 3px solid var(--main-HD-clr);
+    background-color: #f2951ca4
+}
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    .mandobForm form {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .mandobForm form [type] {
+        margin: 10px 0;
+        padding: 0.7rem;
+        font-size: 1.3rem;
+    }
+    .mandobForm form div.radio {
+        /* border: 1px solid #000; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+    
+    .mandobForm form div.radio div {
+        /* border: 1px solid #000; */
+        margin: 5px 0;
+    
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto ;
+    }
+    
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

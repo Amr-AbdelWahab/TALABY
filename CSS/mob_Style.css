@@ -202,6 +202,12 @@ main.landing{
         width: 100% !important;
         margin-left:10px !important;
     }
+    .landing .item.cont{
+        height: 30% !important;
+        margin-top: -100px;
+        margin-left: 0px !important;
+
+    }
         
 
     .landing .tard{
@@ -242,16 +248,21 @@ main.landing{
 
 .sec1{
     display: block !important;
+    padding-top: 50px !important;
     box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
 
 
 }
 section.sec1 .container{
     flex-direction: column;
-    height: calc( 100vh) !important;
+    /* height: calc( 100vh) ; */
     /* margin-top: 50px; */
-    padding-top:50px ;
+    padding-top:0px ;
     justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+
     /* border: 1px solid #000; */
     }
 /* ---------------------------------------- */
