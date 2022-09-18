@@ -255,7 +255,7 @@ main.landing{
 }
 section.sec1 .container{
     flex-direction: column;
-    /* height: calc( 100vh) ; */
+    height: calc( 100vh) ;
     /* margin-top: 50px; */
     padding-top:0px ;
     justify-content: flex-start;

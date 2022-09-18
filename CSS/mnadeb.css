@@ -115,6 +115,15 @@
 .mandobForm form [type]::placeholder {
     color: var(--main-BG-clr);
 }
+
+.mandobForm form .date input{
+    border-radius: 25px;
+    outline: none;
+    border-color: var(--main-HD-clr);
+    /* border: none; */
+}
+
+
 .mandobForm form div.radio {
     /* border: 1px solid #000; */
     display: flex;
@@ -140,10 +149,12 @@
 .mandobForm form div.radio div label{
     cursor: pointer;
     user-select: none;
+    color: var(--main-HD-clr);
 }
-.mandobForm form p{
+.mandobForm form p, .date
+{
     font-size: 1.3rem;
-    margin: 10px 0;
+    margin: 5px 0 5px 0;
     padding: 1rem;
     
 }

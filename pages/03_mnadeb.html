@@ -102,7 +102,7 @@
         <section  class="mandobForm b d" id=" ">
             <div class="container b d">
 
-                <form action="data.html" method="get">
+                <form action="01_data.html" method="get">
                     <input type="text" name="firstName" placeholder="الاسم:" >
                     <input type="text" name="lastName" placeholder="اسم العائلة:" >
                     <input type="text" name="tell" placeholder="رقم الجوال:">
@@ -112,8 +112,16 @@
                     <input type="text" name="carType" placeholder="نوع السيارة :">
                     <input type="text" name="carModel" placeholder=" موديل :">
                     <input type="text" name="carNum" placeholder=" رقم اللوحة :">
-                    <input type="date" name="policyValid" placeholder="  تاريخ انتهاء الرخصة :">
-                    <input type="date" name="InsuranceValid" placeholder="  تاريخ انتهاء التأمين :">
+
+                    <div class="date">
+                        <label for="dateA"> تاريخ انتهاء الرخصة :</label>
+                        <input type="date" name="policyValid" id="dateA" >
+                    </div>
+                    <div class="date">
+                        <label for="dateB"> تاريخ انتهاء التأمين :</label>
+                        <input type="date" name="policyValid" id="dateB" >
+                    </div>
+                
                     <p>من أين تعرفت علينا؟</p>
                     <div class="radio">   
                         <div>
@@ -144,8 +152,8 @@
 
 
                     <div class="subBtn">
-                        <input type="reset" value="RESET">
-                        <input type="submit" value="SEND">
+                        <input type="reset" value="مسح البيانات">
+                        <input type="submit" value="تسجيل">
                     </div>
                 </form>
 
@@ -183,8 +191,8 @@
             <div class="cont-foot">
                 
                 <div class="links">
-                    <a href="#">من نحن</a>
-                    <a href="#"> اتصل بنا</a>
+                    <a href="04_about_Us.html">من نحن</a>
+                    <a href="02_contact_Us.html"> اتصل بنا</a>
                     <a href="#">الأسئلة الشائعة</a>
                 </div>
 

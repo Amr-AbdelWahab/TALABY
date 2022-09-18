@@ -1,0 +1,114 @@
+:root {
+    --main-BG-clr: #EEEEEE;
+    --main-NBG-clr: #FFFFFF;
+    --main-HD-clr: #F2951C;
+    --main-TXT-clr: #000000;
+    --trans: all 0.25s ease-in-out;
+}
+
+/* ---------------------------------------- */
+/* ------LANDING------------------------ */
+/* ---------------------------------------- */
+
+.aboutLanding {
+    position: relative;
+    height: 100vh;
+}
+.aboutLanding .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc( 100vh - 80px);
+    margin-top: 80px;
+    /* border: 1px solid #000; */
+}
+.aboutLanding .container .item{
+    /* border: 1px solid #000; */
+    position: relative;
+    height: 50vh;
+    width: 550px;
+    width: 40%;
+}
+.aboutLanding .item img{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    transition: var(--trans);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/* -------------------------- */
+
+.aboutLanding .container .description{
+    /* border: 1px solid #000; */
+    /* height: 40vh; */
+    margin-right: 20px;
+}
+.aboutLanding .container .description h2 {
+    border-bottom: 2px solid var(--main-HD-clr);
+    color: var(--main-HD-clr);
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    width: auto;
+}
+.aboutLanding .container .description p {
+    font-size: 1.6rem;
+    margin: 1rem 0 1.5rem 0;
+    line-height: 3rem;
+    font-weight: 600;
+}
+.aboutLanding .container .description a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(2, 103, 219);
+}
+.aboutLanding .container .description a i{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.aboutLanding .container .description a:hover i {
+    margin-left: 0.2rem;
+
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+
+
+
+
+}
+
+.aboutA.aboutLanding .container .item{
+    /* border: 1px solid #000; */
+    position: relative;
+    height: 40vh;
+    width: 550px;
+    width: 40%;
+}
+
+.aboutA.aboutLanding .container{
+    margin-top: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
