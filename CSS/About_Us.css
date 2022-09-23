@@ -25,14 +25,15 @@
 .aboutLanding .container .item{
     /* border: 1px solid #000; */
     position: relative;
-    height: 50vh;
-    width: 550px;
+    /* height: 50vh; */
+    height: 30vw;
+    /* width: 550px; */
     width: 40%;
 }
 .aboutLanding .item img{
     position: absolute;
     display: inline-block;
-    height: 100%;
+    width: 100%;
     transition: var(--trans);
     transform: translate(-50%, -50%);
     top: 50%;
@@ -73,6 +74,32 @@
 
 }
 
+
+.aboutLanding.aboutA {
+height: auto !important;
+}
+.aboutLanding.aboutA .container{
+    /* border: 1px solid #000; */
+    height: auto !important;
+    margin-top: 20px;
+}
+
+.aboutA .desCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+}
+.aboutA.aboutLanding .container .description p {
+    font-size: 1.5rem;
+    text-align: center ;
+    margin: 0.5rem 0 1.5rem 0;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+
 /* Mobile */
 @media (max-width: 767px) {
 
@@ -82,19 +109,50 @@
 
 }
 
-.aboutA.aboutLanding .container .item{
+
+
+
+
+/* ---------------------------------------- */
+/* ------services------------------------ */
+/* ---------------------------------------- */
+
+
+
+
+
+.services {
+
+    background-color: none;
+    background-image: url(../img/about_us/services/servBackground.png);
+    background-size: cover;
+    background-position: right;
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+    padding-bottom: 5rem ;
+}
+.services .container{
+    /* transform: skewY(3deg); */
+    /* height: 1000px; */
     /* border: 1px solid #000; */
-    position: relative;
-    height: 40vh;
-    width: 550px;
-    width: 40%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-.aboutA.aboutLanding .container{
-    margin-top: 0px;
-
+.services .container h2 {
+    /* border: 1px solid #000; */
+    font-size: 2rem;
+    line-height: 4rem;
+    margin: 4rem 0;
 }
-
+.services .container .features{
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 
 
