@@ -21,6 +21,7 @@ includes.map(include => {
 
 
 // Variable
+
 let ham = document.getElementById('ham');
 let links = document.getElementById('links');
 
@@ -29,19 +30,33 @@ ham.addEventListener('click', hamClick);
 function hamClick () {
     ham.classList.toggle('active');
     links.classList.toggle('show');
-
-}
-
+};
 
 let itemS = document.getElementById('links').getElementsByTagName('li');
 console.log(itemS);
 
 for ( i = 0 ; i < itemS.length ; i++) {
     itemS[i].addEventListener('click', timing);
-}
+};
 
 function timing () {
     setTimeout(hamClick, 400);
-}
+};
 
 
+
+
+// let body = document.getElementsByTagName('div');
+// for ( i = 0 ; i < body.length ; i++) {
+//     body[i].addEventListener('click', timing5);
+// };
+
+// function timing5 () {
+//     setTimeout(hamOff, 400);
+// }
+
+
+// function hamOff () {
+//     ham.classList.remove('active');
+//     links.classList.remove('show');
+// };

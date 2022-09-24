@@ -39,6 +39,20 @@
     top: 50%;
     left: 50%;
 }
+/* Mobile */
+@media (max-width: 767px) {
+    .aboutLanding .container{
+        flex-direction: column;
+    }
+    .aboutLanding.aboutA .container{
+        flex-direction: column-reverse;
+    }
+    .aboutLanding .container .item{
+        height: 70vw;
+        width: 70%;
+    }
+}
+
 
 /* -------------------------- */
 
@@ -74,6 +88,7 @@
 
 }
 
+/* ---------------- */
 
 .aboutLanding.aboutA {
 height: auto !important;
@@ -100,9 +115,59 @@ height: auto !important;
 }
 
 
-/* Mobile */
+/* Mobile  --   aboutLanding   */
 @media (max-width: 767px) {
+    .aboutLanding .container .description  {
+        margin-right: 0px;
+    }
+    .aboutLanding .container .description h2 {
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .aboutLanding .container .description p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem 1rem 1.5rem;
+        line-height: 1.3rem;
+    }
+    .aboutLanding .container .description a {
+        font-size: 1rem;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    /* ----------- */
 
+    .aboutLanding.aboutA {
+        }
+        .aboutLanding.aboutA .container{
+            margin-top: -50px;
+        }
+        .aboutLanding.aboutA .container .item{
+            height: 50vw;
+            width: 70%;
+        }
+    
+        
+        .aboutA .desCont{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center ;
+        }
+        .aboutA.aboutLanding .container .description  {
+        }
+        .aboutA.aboutLanding .container .description p {
+            font-size: 1rem;
+            text-align: center ;
+            margin: 0.5rem 0 1.5rem 0;
+            line-height: 1.2rem;
+            font-weight: 600;
+        }
+        
 
 
 
@@ -127,14 +192,12 @@ height: auto !important;
     background-image: url(../img/about_us/services/servBackground.png);
     background-size: cover;
     background-position: right;
-    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2); */
     margin-top: 5rem;
+    margin-bottom: 5rem;
     padding-bottom: 5rem ;
 }
 .services .container{
-    /* transform: skewY(3deg); */
-    /* height: 1000px; */
-    /* border: 1px solid #000; */
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -142,13 +205,11 @@ height: auto !important;
     justify-content: center;
 }
 .services .container h2 {
-    /* border: 1px solid #000; */
     font-size: 2rem;
     line-height: 4rem;
     margin: 4rem 0;
 }
 .services .container .features{
-    /* border: 1px solid #000; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -157,6 +218,33 @@ height: auto !important;
 
 
 
+/* Mobile  --   services   */
+
+@media (max-width: 767px) {
+    .services .container h2 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    .services .container .features .card{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .services .container .features p,
+    .services .container .features h3
+    {
+        padding: 0;
+        margin: 0 15px;
+    }
+    .features .card img {
+        height: 5rem;
+        margin-left: 1rem ;
+    }
+    
+    
+}
 
 
 
