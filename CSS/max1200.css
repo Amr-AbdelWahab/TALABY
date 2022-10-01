@@ -1,0 +1,76 @@
+/* Large */
+@media only screen and (max-width: 1221px) and (min-width: 768px)   {
+    
+    nav .logo p:nth-child(2){
+        margin: 0 20px;
+        width: 3px;
+    }
+    nav .logo p:nth-child(3){ font-size: 1.1rem; }
+    nav ul li{ margin-right: 20px; }
+    
+    
+    nav ul li a,
+    nav ul li a span {
+    font-size: .9rem;
+}
+
+    .landing .container{
+    }
+    .landing .container .item{
+        height: 30vw;
+        width: 30%;
+    }
+    .landing .tard{
+        width: 40%;
+    }
+    .landing .tard h1 {
+        font-size: 1.5rem;
+        padding: inherit;
+        margin-bottom: 1rem;
+        /* border: 1px solid #000; */
+    }
+    .landing .tard input,
+    .landing .tard button {
+        font-size: 1rem;
+    }
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+    section.sec1 .container .item{
+        height: 30vh;
+        min-width: calc( 30vh * 1.55);
+    }
+/* ---------------------------------------- */
+.sec1 .description{
+    width: calc( 40vh * 1.55);
+    padding-right: 2rem;
+}
+.sec1 .description h2{
+    font-size: 1.6rem;
+}
+.sec1 .description ul li{
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

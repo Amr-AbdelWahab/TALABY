@@ -60,3 +60,24 @@ function timing () {
 //     ham.classList.remove('active');
 //     links.classList.remove('show');
 // };
+
+
+// الاسئلة الشائعة
+
+let qaContainer = document.getElementById('qa').getElementsByTagName('li');
+
+for ( i = 0 ; i < qaContainer.length ; i++) {
+    qaContainer[i].addEventListener('click', showAnswer);
+};
+
+function showAnswer () {
+    
+    // for ( i = 0 ; i < qaContainer.length ; i++) {
+    //     qaContainer[i].classList.remove('showAnswer');
+    // };
+
+
+    
+    this.classList.toggle('showAnswer');
+};
+

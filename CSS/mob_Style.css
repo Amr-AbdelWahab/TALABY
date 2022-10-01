@@ -1,26 +1,8 @@
 /* Mobile */
-@media (max-width: 767px) {
-    :root {
-        --main-BG-clr: #EEEEEE;
-        --main-NBG-clr: #FFFFFF;
-        --main-HD-clr: #F2951C;
-        --main-TXT-clr: #000000;
-        --trans: all 0.25s ease-in-out;
-    }
-
-    *{
-    box-sizing: border-box !important;
-    }
-
-    .container {
-        /* width: 95vw;
-        padding: 0; */
-    }
-
+@media (max-width: 920px) {
     /* ---------------------------------------- */
     /* ------NAV BAR------------------------ */
     /* ---------------------------------------- */
-
 
     nav{
         width: 100%;
@@ -172,6 +154,29 @@
     background-color: #0000009d;
 }
 
+
+
+}
+@media (max-width: 767px) {
+    :root {
+        --main-BG-clr: #EEEEEE;
+        --main-NBG-clr: #FFFFFF;
+        --main-HD-clr: #F2951C;
+        --main-TXT-clr: #000000;
+        --trans: all 0.25s ease-in-out;
+    }
+
+    *{
+    box-sizing: border-box !important;
+    }
+
+    .container {
+        /* width: 95vw;
+        padding: 0; */
+    }
+
+
+
 /* ---------------------------------------- */
 /* ------LANDING------------------------ */
 /* ---------------------------------------- */
@@ -249,13 +254,14 @@ main.landing{
 .sec1{
     display: block !important;
     padding-top: 50px !important;
-    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2); */
+    box-shadow: 2px 2px 20px 15px var(--main-BG-clr);
 
 
 }
 section.sec1 .container{
     flex-direction: column;
-    height: calc( 100vh) ;
+    height: calc( 100vh - 150px) ;
     /* margin-top: 50px; */
     padding-top:0px ;
     justify-content: flex-start;
@@ -309,6 +315,8 @@ section.sec1 .container .item{
 
     .sec2{
         display: block !important;
+        box-shadow: 2px 2px 20px 15px var(--main-BG-clr);
+
     }
     section.sec2 .container h2{
         font-size: 1.7rem;
@@ -448,7 +456,7 @@ footer p {
     bottom: 0;
     right: 0;
     width: 100vw ;
-    background-color: #ffffff44;
+    /* background-color: #ffffff44; */
 }
 
 

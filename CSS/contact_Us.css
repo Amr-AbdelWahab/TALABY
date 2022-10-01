@@ -60,6 +60,10 @@ main.landing{
 .landing .item:hover img:nth-child(5){left: 52%;}
 
 
+/* -----------------*/
+/*     go2next      */
+/* -----------------*/
+
 .go2next{
     display: flex;
     flex-direction: column;
@@ -68,7 +72,7 @@ main.landing{
     padding: 1rem;
     /* border: 1px solid #000; */
 }
-.landing .go2next h2 {
+.go2next h2 {
     position: relative;
     margin-bottom: 5px;
 }
@@ -83,13 +87,23 @@ main.landing{
     bottom: -5px;
     transition: var(--trans);
 }
+
+.go2next a {position: relative; padding-top: 5px;}
+
 .go2next i {
     font-size: 1.8rem;
+    color: var(--main-TXT-clr);
 }
-.go2next a {position: relative;}
+
+.go2next a i:nth-child(1) {
+    color: var(--main-TXT-clr);
+    position: relative;
+    z-index: 100;
+}
 
 .go2next a i:nth-child(2) {
     position: absolute;
+    color: var(--main-TXT-clr);
     transform: translateX( -50% );
     left: 50%;
     bottom: 0px;

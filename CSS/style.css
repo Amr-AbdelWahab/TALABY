@@ -23,7 +23,7 @@
 /* Small */
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        /* width: 750px; */
     }
 }
 
@@ -183,7 +183,7 @@ main {
 main.landing{
     background-image: url(../img/landing.png);
     background-size: cover;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.082);
+    /* border-bottom: 5px solid rgba(0, 0, 0, 0.082); */
 }
 .landing{
     /* display: flex;
@@ -219,7 +219,7 @@ main.landing{
 
 }
 .landing .item:hover img[src="img/lnd/lnd2.png"] {
-top: 45% !important;
+top: 48% !important;
 left: 45%;
 }
 .landing .item:hover img[src="img/lnd/lnd3.png"] {
@@ -237,7 +237,7 @@ top: 44%;
     /* border: 1px solid #000; */
 }
 .landing .tard h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: inherit;
     margin-bottom: 1rem;
     /* border: 1px solid #000; */
@@ -317,8 +317,9 @@ section.sec1 .container{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: calc( 100vh - 150px) ;
-
+    /* height: calc( 100vh - 150px) ; */
+    height: auto;
+    padding-bottom: 5rem;
     /* border: 1px solid #000; */
 }
 
@@ -364,7 +365,6 @@ top: 45%;
 .sec1 .description ul li{
     font-size: 1.5rem;
     margin-bottom: 0.7rem;
-
 }
 .sec1 .description ul li:nth-child(2){margin-right: 1rem;}
 .sec1 .description ul li:nth-child(3){margin-right: 2rem;}
@@ -383,17 +383,22 @@ top: 45%;
 /* ---------------------------------------- */
 
 section.sec2{
+    /* border: 1px solid #000; */
     background-color: var(--main-HD-clr);
     background-color: #E28308;
-    margin-top: -7rem;
+    /* margin-top: -7rem; */
+    margin-top: 2rem;
     transform: skewY(-3deg);
-    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.2); */
+    box-shadow: 2px 2px 20px 15px var(--main-BG-clr);
+
 }
 section.sec2 .container{
     transform: skewY(3deg);
     /* height: 1000px; */
     /* border: 1px solid #000; */
     padding-top: 50px;
+    /* padding-bottom: 20px; */
     display: flex;
     justify-content: center;
 }
@@ -429,10 +434,77 @@ section.sec2 .container h2{
 .features .card:hover {
     background-color: rgba(255, 255, 255, 0.089);
 }
-.features .card img {
-    height: 6rem;
+.features .card .cardLogo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+.features .card img {
+    display: inline-block;
+    height: 6rem;
+    text-align: center;
+    /* border: 1px solid #000; */
+
+}
+.features .card img:nth-child(2),
+.features .card img:nth-child(3),
+.features .card img:nth-child(4) {
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+
+}
+/* hover animation */
+/* logo1 */
+.features .card.logo1:hover  img:nth-child(3) {
+    scale: 1.1;    
+    left: 53%;
+}
+/* logo2 */
+
+.features .card.logo2  img:nth-child(3) {    
+    /* left: 0%; */
+}
+.features .card.logo2:hover  img:nth-child(3) {
+    left: 55%;
+}
+/* logo3 */
+.features .card.logo3:hover  img:nth-child(3) {
+    scale: 1.1;    left: 53%; 
+}
+/* logo4 */
+.features .card.logo4:hover  img:nth-child(3) {
+    /* scale: 1.1;  */
+    /* left: 52%; */
+    top: 20%; 
+    /* rotate: 1turn; */
+}
+/* logo5 */
+.features .card.logo5 img:nth-child(4) { opacity: 0; height: 0; }
+.features .card.logo5:hover  img:nth-child(3) {
+    /* scale: 1.1; 
+    left: 52%; */
+    top: 35%; 
+}
+.features .card.logo5:hover  img:nth-child(4) {
+    opacity: 1; 
+    height: 100%;
+    /* rotate: 1turn; */
+}
+/* logo6 */
+.features .card.logo6:hover  img:nth-child(3) {
+    scale: 1.1; 
+    left: 52%;
+    top: 56%; 
+}
+
+
+
+
+/* ------------------ */
 .features .card h3 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -562,10 +634,11 @@ footer .links a:hover {
 }
 .social i {
     color: white;
-    font-size: 1.2rem;
-    height: 2.3rem;
-    width: 2.3rem;
-    line-height: 2.3rem;
+    font-size: 1.1rem;
+    height: 2.0rem;
+    width: 2.0rem;
+    line-height: 2.0rem;
+    vertical-align: middle;
     text-align: center;
     border: 2px solid transparent;
     border-radius: 50%;
@@ -601,8 +674,8 @@ footer p {
     bottom: 0;
     right: 0;
     width: calc( 100vw - 200px );
-    /* border: 1px solid #000; */
-    background-color: #ffffff44;
+    border-top: 1px solid #ffffff44;
+    /* background-color: #ffffff44; */
 }
 footer p span:nth-child(1),
 footer p  a {

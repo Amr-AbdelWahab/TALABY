@@ -42,10 +42,18 @@ li {
     list-style: none;
 }
 
+/*
+    * ----------------------
+    * -----My Global Class----------
+    * ----------------------
+*/
 
-
-
-
+.bd {
+    border: 1px solid #000;
+}
+.disNon {
+    display: none;
+}
 
 
 .container {
@@ -55,9 +63,6 @@ li {
     margin-right: auto;
 }
 
-.bd {
-    border: 1px solid #000;
-}
 
 
 
@@ -73,7 +78,7 @@ li {
 /* Small */
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        /* width: 750px; */
     }
 }
 
