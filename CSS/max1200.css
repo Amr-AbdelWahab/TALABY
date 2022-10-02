@@ -1,4 +1,39 @@
 /* Large */
+@media only screen and (max-width: 1400px) and (min-width: 1222px)   {
+    .landing .container .item{
+        height: 30vw;
+        width: 30%;
+    }
+
+    .landing .tard{
+        width: 40%;
+    }
+
+    .landing .tard h1 {
+    }
+
+    /* ---------------------------------------- */
+    /* ---------------------------------------- */
+
+    section.sec1 .container .item{
+        height: 30vh;
+        min-width: calc( 30vh * 1.55);
+    }
+    /* ---------------------------------------- */
+    .sec1 .description{
+        width: calc( 40vh * 1.55);
+        padding-right: 2rem;
+    }
+    .sec1 .description h2{
+        font-size: 1.6rem;
+    }
+    .sec1 .description ul li{
+        font-size: 1.4rem;
+        margin-bottom: 0.6rem;
+    }
+    
+
+}
 @media only screen and (max-width: 1221px) and (min-width: 768px)   {
     
     nav .logo p:nth-child(2){
