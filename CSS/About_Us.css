@@ -262,11 +262,11 @@ height: auto !important;
     transform: translate( 0%, 0%);
     top: 0;
     left: -5px;
-    scale: .7;
+    scale: 0.7;
 }
 .features .card.serv4:hover  img:nth-child(2) {
-    opacity: 1;
-    rotate: 1turn;
+    /* rotate :1turn;  */
+    transform: rotate(180deg);
 }
 /* serv5 */
 .features .card.serv5 img:nth-child(2) {

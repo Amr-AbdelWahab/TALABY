@@ -150,10 +150,13 @@ cursor: pointer;
     color: rgb(160, 94, 8)
 }
 .showAnswer .fa-angle-down{
-    rotate: 180deg;
+    /* rotate: 180deg; */
+    transform: rotate(0.5turn);
+
 }
 .showAnswer .ico{
-    rotate: 1turn;
+    /* rotate: 1turn; */
+    transform: rotate(1turn);
 }
 .showAnswer .answer{
     display: block;
