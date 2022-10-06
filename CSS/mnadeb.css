@@ -158,6 +158,10 @@
     padding: 1rem;
     
 }
+.mandobForm form .date input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .mandobForm form .subBtn {
     text-align: end;
@@ -179,6 +183,12 @@
     background-color: #f2951ca4
 }
 
+.mandobForm .radio div:hover label {
+    color: var(--main-TXT-clr);
+}
+.mandobForm .subBtn {
+    margin-top: 20px;
+}
 
 
 
