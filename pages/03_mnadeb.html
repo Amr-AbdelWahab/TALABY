@@ -104,10 +104,13 @@
         <section  class="mandobForm b d" id=" ">
             <div class="container b d">
 
-                <form action="01_data.html" method="get">
+                <form action="01_data.html" method="get" id="form">
                     <input type="text" name="firstName" placeholder="الاسم:" required>
                     <input type="text" name="lastName" placeholder="اسم العائلة:" required>
-                    <input type="number" name="tell" placeholder="رقم الجوال:" required>
+
+                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" required>
+                    <span id="numError"></span>
+                    
                     <input type="email" name="mail" placeholder="البريد الإلكتروني:" required>
                     <input type="text" name="address" placeholder="العنوان:" required>
                     <input type="number" name="ID" placeholder="رقم الهوية:" required>
@@ -152,10 +155,9 @@
                         </div>
                     </div>
 
-
                     <div class="subBtn">
                         <input type="reset" value="مسح البيانات">
-                        <input type="submit" value="تسجيل">
+                        <input type="submit" value="تسجيل" id="submit">
                     </div>
                 </form>
 
