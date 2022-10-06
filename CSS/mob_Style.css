@@ -292,9 +292,10 @@ section.sec1 .container .item{
     align-items: center;
     }
     .sec1 .description h2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
         margin: 0;
-        padding-right: 1rem ;
+        padding-right: 0rem ;
         /* margin-right: -4rem; */
         margin-bottom: 1rem;
     }
