@@ -79,6 +79,12 @@ a {
 li {
     list-style: none;
 }
+form span {
+    color: red;
+    position: relative;
+    right: 20px;
+    font-weight: bold;
+}
 
 /* MY STYLES */
 
