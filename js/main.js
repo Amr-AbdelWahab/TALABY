@@ -70,22 +70,55 @@ function showAnswer () {
 //-----------
 
 //Variable
-let submit = document.getElementById('submit');
+// let submit = document.getElementById('submit');
 let form = document.getElementById('form');
-let phoneNum = document.getElementById('phoneNum').value;
+let phonError = document.getElementById('phonError');
+let idError = document.getElementById('idError');
+let submitError = document.getElementById('submitError');
 
-console.log(document.form[0]);
 
-let numError = document.getElementById('numError');
-
+// validate user Phon Number
 function validatePhonNum() {
     let phoneNum = document.getElementById('phoneNum').value;
 
     if (phoneNum.length !== 10 ){
-        numError.innerHTML = '*ادخل رقم الجوال ( مكون من 10 أرقام )';
-        console.log(phoneNum);
+        phonError.innerHTML = '*ادخل رقم الجوال ( مكون من 10 أرقام )';
     }else{
-        numError.innerHTML = ""
+        phonError.innerHTML = "";
+        console.log(phoneNum + "is valid");
     }
-    
+};
+// validate user ID Number
+function validateIdNum() {
+    let idNum = document.getElementById('idNum').value;
+
+    if (idNum.length !== 10 ){
+        idError.innerHTML = '*ادخل رقم الهوية ( مكون من 10 أرقام )';
+    }else{
+        idError.innerHTML = "";
+        console.log(idNum + "is valid");
+    }
+};
+
+//Check validation before Submit
+let userPhoneNum = document.getElementById('phoneNum');
+let userIdNum = document.getElementById('idNum');
+
+form.onsubmit = function (e) {
+    let userPhone = false;
+    let userID = false;
+
+    if (userPhoneNum.value.length === 10 ) {
+        userPhone = true;
+    }
+    if (userIdNum.value.length === 10 ) {
+        userID = true;
+    }
+    if (userPhone === false || userID === false ){
+        e.preventDefault();
+        submitError.innerHTML = '*برجاء التأكد من ادخال جميع البيانات المطلوبة';
+        console.log( "User Phone should be 10 digits");
+    }
+
 }
+

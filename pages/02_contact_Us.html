@@ -109,22 +109,20 @@
 
                 <form action="01_data.html" method="get" id="form">
                     <input type="text" name="name" placeholder="الاسم:" >
-                    <input 
-                        type="number" 
-                        name="tell" 
-                        placeholder="رقم الجوال:" 
-                        maxlength="10"
-                        id="phoneNum" 
-                        onkeyup="validatePhonNum()"  
-                        >
-                    <span id="numError" ></span>
+
+                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" >
+                    <span id="phonError"></span>
 
                     <input type="email" name="mail" placeholder="البريد الإلكتروني:" >
                     <input type="text" name="subject" placeholder="الموضوع:" >
                     <textarea type="text" name="content" id="" placeholder="الرسالة:" ></textarea>
+                    
                     <div class="subBtn">
+                        <div>
+                            <span id="submitError"></span>
+                        </div>
                         <input type="reset" value="مسح البيانات">
-                        <input type="submit" value="إرسال">
+                        <input type="submit" value="إرسال" id="submit">
                     </div>
                 </form>
 
