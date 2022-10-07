@@ -108,13 +108,13 @@
             <div class="container b d">
 
                 <form action="01_data.html" method="get" id="form">
-                    <input type="text" name="name" placeholder="الاسم:" >
+                    <input type="text" name="name" placeholder="الاسم:" required>
 
-                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" >
+                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" required>
                     <span id="phonError"></span>
 
-                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" >
-                    <input type="text" name="subject" placeholder="الموضوع:" >
+                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" required>
+                    <input type="text" name="subject" placeholder="الموضوع:" required>
                     <textarea type="text" name="content" id="" placeholder="الرسالة:" ></textarea>
                     
                     <div class="subBtn">

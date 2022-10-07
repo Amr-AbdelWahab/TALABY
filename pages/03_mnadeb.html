@@ -105,29 +105,29 @@
             <div class="container b d">
 
                 <form action="01_data.html" method="get" id="form">
-                    <input type="text" name="firstName" placeholder="الاسم:" >
-                    <input type="text" name="lastName" placeholder="اسم العائلة:" >
+                    <input type="text" name="firstName" placeholder="الاسم:" required>
+                    <input type="text" name="lastName" placeholder="اسم العائلة:" required>
 
-                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" >
+                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" required>
                     <span id="phonError"></span>
                     
-                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" >
+                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" required>
                     <input type="text" name="address" placeholder="العنوان:" >
 
-                    <input type="number" name="ID" placeholder="رقم الهوية:"  id="idNum" onkeyup="validateIdNum()" >
+                    <input type="number" name="ID" placeholder="رقم الهوية:"  id="idNum" onkeyup="validateIdNum()" required>
                     <span id="idError"></span>
                     
-                    <input type="text" name="carType" placeholder="نوع السيارة :" >
-                    <input type="text" name="carModel" placeholder=" موديل :" >
-                    <input type="text" name="carNum" placeholder=" رقم اللوحة :" >
+                    <input type="text" name="carType" placeholder="نوع السيارة :" required>
+                    <input type="text" name="carModel" placeholder=" موديل :" required>
+                    <input type="text" name="carNum" placeholder=" رقم اللوحة :" required>
 
                     <div class="date">
                         <label for="dateA"> تاريخ انتهاء الرخصة :</label>
-                        <input type="date" name="policyValid" id="dateA" >
+                        <input type="date" name="policyValid" id="dateA" required>
                     </div>
                     <div class="date">
                         <label for="dateB"> تاريخ انتهاء التأمين :</label>
-                        <input type="date" name="policyValid" id="dateB" >
+                        <input type="date" name="policyValid" id="dateB" required>
                     </div>
                 
                     <p>من أين تعرفت علينا؟</p>
