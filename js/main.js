@@ -70,19 +70,16 @@ function showAnswer () {
 //-----------
 
 //Variable
-// let submit = document.getElementById('submit');
-// let numMassage = document.getElementById('numMassage');
-// let maxInputNum = document.getElementById('maxInputNum');
-// let form = document.getElementById('form');
+let submit = document.getElementById('submit');
+let form = document.getElementById('form');
+let phoneNum = document.getElementById('phoneNum').value;
 
-// console.log(submit);
+console.log(document.form[0]);
 
 let numError = document.getElementById('numError');
-console.log(numError);
 
 function validatePhonNum() {
     let phoneNum = document.getElementById('phoneNum').value;
-    
 
     if (phoneNum.length !== 10 ){
         numError.innerHTML = '*ادخل رقم الجوال ( مكون من 10 أرقام )';

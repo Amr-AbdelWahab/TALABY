@@ -204,16 +204,15 @@ main.landing{
 
     .landing .item{
         height: 40% !important;
-        width: 100% !important;
+        /* height: 200px !important; */
+        /* width: 100% !important; */
         margin-left:10px !important;
     }
     .landing .item.cont{
         height: 30% !important;
         margin-top: -100px;
         margin-left: 0px !important;
-
     }
-        
 
     .landing .tard{
             /* border: 1px solid #000; */
@@ -262,6 +261,7 @@ main.landing{
 section.sec1 .container{
     flex-direction: column;
     height: calc( 100vh - 150px) ;
+
     /* margin-top: 50px; */
     padding-top:0px ;
     justify-content: flex-start;
@@ -271,6 +271,10 @@ section.sec1 .container{
 
     /* border: 1px solid #000; */
     }
+
+
+
+
 /* ---------------------------------------- */
 section.sec1 .container .item{
         height: 30% !important;
@@ -280,6 +284,48 @@ section.sec1 .container .item{
     section.sec1 .container .item img{
         /* border: 1px solid rgb(204, 20, 20); */
     }
+
+
+
+
+    @media (max-height:600px) {
+        .landing .container{
+            height: auto !important;
+        }
+    
+        .landing .item{
+            height: 200px !important;
+
+        }
+        .landing .item.cont{
+
+        }
+        .landing .tard .appLink a{
+            text-align: center;
+        }
+        .landing .tard .appLink a img{
+            width: 150px;
+        }
+    
+    
+
+
+
+
+        section.sec1 .container {
+            height: auto;
+        }
+        section.sec1 .container .item{
+            height: 150px !important;
+
+        }
+    }
+
+
+
+
+
+
 /* ---------------------------------------- */
 .sec1 .description{
     display: flex !important;

@@ -133,7 +133,14 @@ main.landing{
         padding-top: 100px;
         height: calc( 50vh - 50px) !important;
         height: 40vh !important;
-
+    }
+    @media (max-height: 600px) {
+        .landing.call .container {
+            /* height: calc( 50vh - 50px) !important;
+            height: 40vh !important; */
+            height: 300px !important;
+        }
+    
     }
     .landing.call  .item{
         height: 100% !important;
@@ -208,6 +215,7 @@ main.landing{
     section.sec1 .container{
         flex-direction: column;
         height: calc( 100vh - 100px) !important;
+        height: auto !important;
     }
 
     .contactForm  {

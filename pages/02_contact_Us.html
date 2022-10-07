@@ -107,14 +107,21 @@
         <section  class="sec1 contactForm b d" id=" ">
             <div class="container b d">
 
-                <form action="01_data.html" method="get">
-                    <input type="text" name="name" placeholder="الاسم:" required>
-                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" required>
+                <form action="01_data.html" method="get" id="form">
+                    <input type="text" name="name" placeholder="الاسم:" >
+                    <input 
+                        type="number" 
+                        name="tell" 
+                        placeholder="رقم الجوال:" 
+                        maxlength="10"
+                        id="phoneNum" 
+                        onkeyup="validatePhonNum()"  
+                        >
                     <span id="numError" ></span>
 
-                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" required>
-                    <input type="text" name="subject" placeholder="الموضوع:" required>
-                    <textarea type="text" name="content" id="" placeholder="الرسالة:" required></textarea>
+                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" >
+                    <input type="text" name="subject" placeholder="الموضوع:" >
+                    <textarea type="text" name="content" id="" placeholder="الرسالة:" ></textarea>
                     <div class="subBtn">
                         <input type="reset" value="مسح البيانات">
                         <input type="submit" value="إرسال">
