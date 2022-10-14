@@ -75,7 +75,9 @@ body {
 a {
     text-decoration: none;
 }
-
+a:visited {
+    color: var(--main-TXT-clr);
+}
 li {
     list-style: none;
 }
@@ -322,11 +324,13 @@ section.sec1{
 section.sec1 .container{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     /* height: calc( 100vh - 150px) ; */
     height: auto;
     padding-bottom: 5rem;
     /* border: 1px solid #000; */
+}
+section.sec1 .container{
 }
 
 /* ---------------------------------------- */
