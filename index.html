@@ -17,12 +17,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="CSS/all.min.css">
     <!-- My style -->
+    <link rel="stylesheet" href="CSS/3amr.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/mob_Style.css">
     <link rel="stylesheet" href="CSS/max1200.css">
+    <link rel="stylesheet" href="CSS/popUp.css">
 
     <!-- java script -->
-    <script src="js/main.js" defer></script>
+    <!-- <script src="js/main.js" defer></script> -->
+    <script src="js/api.js" defer></script>
     
     <title>TALABY</title>
 </head>
@@ -88,10 +91,17 @@
                     في نفس اليوم
                 </h1>
                 <input id="trackerID" type="text" placeholder="ادخل رقم الطرد">
-                <button id="trackMe">تتبع الطرد</button>
+                <button id="btnTrackMyPack">تتبع الطرد</button>
                 <div class="appLink b d">
                     <a href="#"><img src="img/app-store.png" alt=""></a>
                     <a href="#"><img src="img/google-play.png" alt=""></a>
+                </div>
+
+                <div class="overlay-response package-tracking disNon" id="packageTracking">
+                  <div class="trcking-container">
+                    <span class="close" id="closePopUp">X</span>
+                    <h2>رقم الطرد : <span></span></h2>
+                  </div>
                 </div>
 
             </div>

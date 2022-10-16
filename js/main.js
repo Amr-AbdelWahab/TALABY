@@ -107,18 +107,20 @@ let userIdNum = document.getElementById('idNum');
 form.onsubmit = function (e) {
     let userPhone = false;
     let userID = false;
+    // console.log( userIdNum );
 
     if (userPhoneNum.value.length === 10 ) {
         userPhone = true;
     }
-    if (userIdNum.value.length === 10 ) {
-        userID = true;
+    if (userIdNum.value.length === 10  ) {
+        userID = true;        
     }
     if (userPhone === false || userID === false ){
         e.preventDefault();
         submitError.innerHTML = '*برجاء التأكد من ادخال جميع البيانات المطلوبة';
-        console.log( "User Phone should be 10 digits");
+        console.log( "User Phone should be 10 digits" );
     }
-
 }
+
+
 

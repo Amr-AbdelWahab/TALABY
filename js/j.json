@@ -1,0 +1,171 @@
+
+{
+  "info": {
+    "_postman_id": "f4693f66-8c12-40f6-9be5-9811b664241d",
+    "name": "Talaby",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Customer Login",
+      "id": "58efdaaf-0ab2-41c1-be28-f364aa0d18b1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicGFsc2hpcF9yZXNvdXJjZSJdLCJVU0VSX1RZUEUiOiJVU0VSIiwic2NvcGUiOlsicm9sZV9hZG1pbiIsInJvbGVfc3VwZXJhZG1pbiJdLCJleHAiOjE2NjU1ODE0MDQsInVzZXJEZXRhaWxzIjp7ImNyZWF0ZWREYXRlIjoxNTcwOTcxMDYxMDAwLCJpZCI6NCwiY29tcGFueUlkIjoxLCJmaXJzdE5hbWUiOiJNYWpkaSIsIm1pZGRsZU5hbWUiOiJNIiwibGFzdE5hbWUiOiJNYWZhcmphIiwiaW1hZ2VVcmwiOiJodHRwczovL2Fzc2V0cy5sb2dlc3RlY2hzLmNvbS9yZXNvdXJjZXMvcmVzb3VyY2VzL3VzZXItcHJvZmlsZS1waWN0dXJlcy91c2VyMTU4MDY2NTc3MTc0NSIsInBhc3N3b3JkIjpudWxsLCJlbWFpbCI6Im1tYWZhcmplaEBnbWFpbC5jb20iLCJwaG9uZSI6IjA1OTQwMzUwMzUiLCJhZGRyZXNzSWQiOjEsImNpdHkiOiJSYW1hbGxhaCIsImh1YklkIjoyLCJ2ZXJpZmljYXRpb25EYXRlIjpudWxsLCJhZGRyZXNzIjpudWxsLCJmdWxsTmFtZSI6bnVsbCwiaXNEZWxldGVkIjpmYWxzZSwiaXNGdWxmaWxtZW50RW5hYmxlZCI6ZmFsc2UsImlzUHJpY2luZ1BlclNlcnZpY2VUeXBlRW5hYmxlZCI6ZmFsc2UsImNvbXBhbnlUeXBlIjpudWxsLCJyb2xlU3RyIjpudWxsLCJjb3VudHJ5IjoiUGFsZXN0aW5nIiwidmVoaWNsZSI6bnVsbCwiZHJpdmVyUGtncyI6bnVsbCwiYmFyY29kZSI6IjMzMjAyOTg3Mjg5MSIsImJhcmNvZGVJbWFnZSI6Imh0dHBzOi8vZmlsZXMucGFsLXNoaXAuY29tLzQ3NTQ0Njk3MjAyOS5wbmciLCJvbGRQYXNzd29yZCI6bnVsbCwidmVoaWNsZUlkIjowLCJodWJOYW1lIjpudWxsLCJjb2RTdW0iOjAuMCwiY29kUGFja2FnZXNDb3VudCI6MCwicmVjZWl2ZWRNb25leSI6MTUyNDA0LjAsImlzQWxsb3dBZGRpbmdBdHRhY2htZW50IjpmYWxzZSwiaXNVc2VCYW5rVHJhbnNmZXIiOmZhbHNlLCJpc0V4Y2x1ZGVTb3J0IjpmYWxzZSwiaXNIdWJNYW5hZ2VyQWRkUGFja2FnZSI6ZmFsc2UsImlzTm9uQWRtaW5DaGFuZ2VDb3N0IjpmYWxzZSwiaXNBbGxvd09wZXJhdGlvbk1hbmFnZXJBZGRDdXN0b21lciI6ZmFsc2UsImNvbXBhbnlMb2dvIjpudWxsLCJpc0FkZEN1c3RvbWVyRnJvbVF1aWNrQWRkU2hpcG1lbnRGb3JtIjpmYWxzZSwiaXNEZWxpdmVyUGFydGlhbE1hc3NSZXBvcnQiOmZhbHNlLCJjb21wYW55TmFtZSI6bnVsbCwiaXNBbGxvd09wZXJhdGlvbk1hbmFnZXJSZWNlaXZlQ29kIjpmYWxzZSwiaXNBbGxvd0Rpc3BhdGNoZXJSZWNlaXZlQ29kIjpmYWxzZSwiaXNQYXJ0aWFsRGVsaXZlcnlFbmFibGVkIjpmYWxzZSwiaXNTdXBwb3J0UmVjZWl2ZVdpdGhvdXRSZWxlYXNpbmdDdXN0b2R5IjpmYWxzZSwiaXNTdXBwb3J0QWRkaW5nRHJhZnRQYWNrYWdlc0J5Q3VzdG9tZXJzIjpmYWxzZSwiaXNTZW5kU21zVG9SZWNlaXZlcnNXaGVuRHJpdmVyUGlja3VwIjpmYWxzZSwiaXNTZW5kU21zVG9SZWNlaXZlcnNXaGVuRHJpdmVyRGVsaXZlciI6ZmFsc2UsImlzSGlkZURlbGl2ZXJlZE1hc3NDb2RSZXBvcnRzIjpmYWxzZSwiaXNTZW5kU21zVG9SZWNlaXZlcnN0b1NoYXJlTG9jYXRpb24iOmZhbHNlLCJmb2xsb3dVcFBhY2thZ2VDb3VudCI6MCwicGFja2FnZVRyYWNraW5nU3RhdHVzQ291bnQiOm51bGwsImlzRm9yY2VEcml2ZXJzQXR0YWNoRHJhZnRQYWNrYWdlIjpmYWxzZSwiZHJpdmVyRWFybmluZ1N1bSI6MC4wLCJwYWNrYWdlc0NvdW50IjowLCJpc1Nob3dGb2xsb3dVcHMiOmZhbHNlLCJpc1Nob3dDdXJyZW50UmVwb3J0cyI6ZmFsc2UsImlzU2hvd0FkZFNoaXBtZW50SW5TaWRlTWVudSI6ZmFsc2UsImlzUmV0dXJuUGFja2FnZXMiOnRydWUsImlzUG9zdHBvbmVQYWNrYWdlcyI6dHJ1ZSwiaXNEZWxpdmVyUGFja2FnZXMiOnRydWUsImlzUmVjZWl2aW5nUG9pbnRFbmFibGVkIjpmYWxzZSwic2hpcHBpbmdQbGFuc0NvdW50IjowLCJpc09ubGluZSI6ZmFsc2UsInJvbGUiOiJBRE1JTiIsImlzUGFja2FnZUZpbmdlcnByaW50UmVxdWlyZWQiOmZhbHNlLCJpc0ZvcmNlQWRkaW5nSW52b2ljZU51bWJlcldoZW5BZGRpbmdQYWNrYWdlcyI6ZmFsc2UsImlzQWxsb3dBZGRpbmdQYWNrYWdlc09uQWxsSHViIjp0cnVlLCJpc0FsbG93QWRkaW5nVGVsZWNvbWVEZXZpY2VzIjpmYWxzZSwiY2F0ZWdvcnlJZHMiOm51bGwsImludGVncmF0aW9uQ2xpZW50IjpudWxsLCJpc0F1dG9Bc3NpZ25Ecml2ZXJzVG9Qa2dzIjpmYWxzZSwiaXNFbmFibGVBdXRvQXNzaWduRm9yQWxsQ3VzdG9tZXJzIjpmYWxzZSwiaXNBdXRvQXNzaWduVG9PbmxpbmVEcml2ZXJzT25seSI6ZmFsc2UsImlzU2hvd0N1c3RvbWVyRmllbGRXaGlsZUFkZGluZ1RpY2tldCI6ZmFsc2UsImlzU2hvd0N1c3RvbWVyc1RvSHViTWFuYWdlciI6ZmFsc2UsImNvbXBhbnlDcmVhdGVkRGF0ZSI6bnVsbCwiaXNFbmFibGVEZWxpdmVyeVZlcmlmaWNhdGlvblBpbkNvZGVGb3JQa2dzIjpmYWxzZSwiaXNFbmFibGVEZWxpdmVyeVZlcmlmaWNhdGlvblBpbkNvZGVGb3JQa2dzV2l0aENvZEdyZWF0ZXJUaGFuIjpudWxsLCJpc05vdGlmeVRvQ0NXaGVuRmFpbGVkRGVsaXZlcnlQa2dBbmRDaGFuZ2VDT0QiOmZhbHNlLCJpc1Nob3dTZW5kZXJOYW1lIjpmYWxzZSwiaXNTaG93U2VuZGVyUGhvbmUiOmZhbHNlLCJpc0VuYWJsZUN1c3RvbWVyQ29uZmlybWF0aW9uRm9yUmVjZWl2aW5nTWFzc0NvZFBrZyI6ZmFsc2UsImlzU2hvd1BhY2thZ2VzSW5Ecml2ZXJBcHAiOmZhbHNlLCJpc0hpZGVQYWNrYWdlc0luRHJpdmVyc0FwcHMiOmZhbHNlLCJpc0VuYWJsZUFyYW1leFRyYW5zZmVyIjpmYWxzZSwiaXNTdXBwb3J0SW50ZXJuYXRpb25hbFBob25lTnVtYmVycyI6ZmFsc2UsImlzQmxvY2tlZCI6ZmFsc2UsImlzRHJpdmVyQ2FuRmFpbFBhY2thZ2VEaXNhYmxlZCI6ZmFsc2UsImlzU2lnbmF0dXJlT25QYWNrYWdlRGVsaXZlcnlEaXNhYmxlZCI6ZmFsc2UsImlzRHJpdmVyUGlja3VwUGFja2FnZXNCeVNjYW5EaXNhYmxlZCI6ZmFsc2UsImlzRW5hYmxlRGVsZXRpbmdDdXN0b21lckFjY291bnRCeUN1c3RvbWVyIjpmYWxzZSwiaXNFbmFibGVFeHBvcnRpbmdCZXR3ZWVuSHVicyI6ZmFsc2UsImh1YkN1c3RvbWVyc0NvZCI6MC4wLCJpc0Rpc2FibGVDb3N0SW5BZGRQYWNrYWdlIjpmYWxzZSwiaXNIaWRlRGVsaXZlcmVkVG9TZW5kZXJJbkNoYW5nZVN0YXR1cyI6ZmFsc2UsImhhc1JvdXRlT3B0aW1pemF0aW9uIjpmYWxzZSwiY29tcGFueURvbWFpbiI6bnVsbCwiYW5kb2lkQWRtaW5BcHBNaW5WZXJzaW9uIjpudWxsLCJpc0RlbGl2ZXJSZXR1cm5lZFBhY2thZ2VzVG9TZW5kZXIiOnRydWUsImlzRGVsaXZlck1hc3NDb2RQYWNrYWdlcyI6dHJ1ZSwiaXNIaWRlU2VuZGVySW5mbyI6ZmFsc2UsImlzSGlkZVJlY2VpdmVySW5mbyI6ZmFsc2UsImlzUGlja3VwU3VwcG9ydGVkIjpmYWxzZSwiY3VycmVuY3kiOm51bGwsImxjbCI6ZmFsc2UsInJlY2VpdmluZ1BrZ3NXaXRob3V0U2Nhbkl0ZW1zIjpmYWxzZSwiZGlzdHJpYnV0b3IiOmZhbHNlLCJkcml2ZXJFYXJuaW5nRW5hYmxlZCI6ZmFsc2UsImJ1bmRsZVBvZEVuYWJsZWQiOmZhbHNlLCJkcml2ZXJDYW5SZXF1ZXN0Q29kQ2hhbmdlIjpmYWxzZSwiZHJpdmVyQ2FuUmV0dXJuUGFja2FnZSI6ZmFsc2UsImRyaXZlclBpY2t1cEFjY2VwdGVkUGFja2FnZXMiOmZhbHNlLCJzaG93UGF5bWVudFR5cGVzV2hlbkRyaXZlckRlbGl2ZXIiOmZhbHNlLCJwcm9tcHROb3RlRm9yRHJpdmVySW5QYWNrYWdlRGVsaXZlcnkiOmZhbHNlLCJ0aWNrZXRpbmdTeXN0ZW1FbmFibGVkIjpmYWxzZSwiaW52b2ljaW5nRW5hYmxlZCI6ZmFsc2UsInBpY2t1cFVuTGlzdGVkUGFja2FnZXNCeUFkbWluIjpmYWxzZSwidHJ1Y2tpbmciOmZhbHNlLCJzZW5kU21zVG9SZWNlaXZlcnNXaGVuRHJpdmVyUG9zdHBvbmUiOmZhbHNlLCJzZW5kU21zVG9SZWNlaXZlcnNXaGVuRHJpdmVyUmV0dXJuIjpmYWxzZSwiaXNEaXNhYmxlTm90aWZ5Q0NXaGVuRGVsaXZlcnlQa2dBbmRDaGFuZ2VDT0QiOmZhbHNlLCJwYWxTaGlwUm9sZSI6IkFETUlOIiwiZW5hYmxlZCI6dHJ1ZSwidXNlcm5hbWUiOiJtbWFmYXJqZWhAZ21haWwuY29tIiwiYWNjb3VudE5vbkV4cGlyZWQiOnRydWUsImFjY291bnROb25Mb2NrZWQiOnRydWUsImNyZWRlbnRpYWxzTm9uRXhwaXJlZCI6dHJ1ZX0sImp0aSI6IjYyODc1NGRmLTA3NjgtNDYzZS1hOTc1LWY2MmJiOTM4ZmQyOSIsImNsaWVudF9pZCI6IndlYl9hcHAifQ.L2uZ880fwOsXdseGPoPndG1noNRjmAG7lgo3Kx79ffWaL_wN322nD0pYZqNV7mQJoizqcN6t6bjeZnIHCQpHhFoeSL_ojtwdr5WrofzFhjdBk3Sd6qZVlsRzsOZvSSGwVoe5G5aKa5BWyvRsJDy_OTTFd3MQ3nhZlQXCI21Sa2ZvWUYud0a6KBoAwo3CLz5_XNk4iiWFkFHI1hXoiUNT5KOljVK7fUvFJIMhkb7RwWyLTOobJAx-Q2ognoSGOXfCd6mJhOZWMuBZoG7fJss7rksNNuC6MZy-Ng1VYkH21F-ntEeYk0shQT42w_bhJ62ldG5tWqA2YHbk0Z8IusD6gw"
+          }
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "company-id",
+            "value": "1",
+            "type": "text"
+          },
+          {
+            "key": "languagecode",
+            "value": "ar",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"mahmoud@logestechs.com\",\"password\":\"rrrttttttt\",\"device\":{\"operatingSystem\":\"Win32\",\"notificationToken\":\"dI6Jz3uJ_bkgImrXGVcydt:APA91bHcfpc4BAHMg768RTnMV--o1EJSY81UhIggDb91dij-cSPBHDnNpasTwrNPdkFlWJHjtxczfYpTBRlM7iADgP_kYuyvNfcAzSaJSs8i43_k8T9wokNjB7icDAHC5mLM7KviqGHC\",\"UUID\":\"4264810d-d725-203c-dc2f-bd404cfe7774\"},\"companyId\":1}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{customerAuth}}login"
+      },
+      "response": [
+        
+      ]
+    },
+    {
+      "name": "customer WhatsApp",
+      "id": "2a5780a9-cd50-49a7-b33b-0b1d8e090e48",
+      "request": {
+        "method": "GET",
+        "header": [
+          
+        ],
+        "url": "{{whatsAppUrl}}5987478589"
+      },
+      "response": [
+        
+      ]
+    },
+    {
+      "name": "Driver Sign Up",
+      "id": "931dc29c-498f-4714-8556-603b4f574df6",
+      "request": {
+        "method": "POST",
+        "header": [
+          
+        ],
+        "url": "{{companyUrl}}driver/signup"
+      },
+      "response": [
+        
+      ]
+    },
+    {
+      "name": "Guest Package Tracking",
+      "id": "d33e7f48-25ba-4a7a-ab3e-ae1936df2f03",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "languagecode",
+            "value": "ar",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{guestsUrl}}1/packages/tracking?barcode=121011000022",
+          "host": [
+            "{{guestsUrl}}1"
+          ],
+          "path": [
+            "packages",
+            "tracking"
+          ],
+          "query": [
+            {
+              "key": "barcode",
+              "value": "121011000022"
+            }
+          ]
+        }
+      },
+      "response": [
+        
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "6a068ffd-fba6-4762-9049-351b5c18b774",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "8362df2c-e9ba-46e6-82c4-a38e048a8a70",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "b35c25aa-7bd1-41c8-9201-c13062e6a952",
+      "key": "customerAuth",
+      "value": "https://apisv2.logestechs.com/api/auth/customer/",
+      "type": "string"
+    },
+    {
+      "id": "58ac010d-6841-40df-81b9-467f2368413d",
+      "key": "whatsAppUrl",
+      "value": "https://api.whatsapp.com/send/?phone=",
+      "type": "string"
+    },
+    {
+      "id": "8036a9a0-a862-407c-bd43-5c6afa869c6a",
+      "key": "companyUrl",
+      "value": "https://apisv2.logestechs.com/api/companies/",
+      "type": "string"
+    },
+    {
+      "id": "9c14ee75-cb90-4d06-be3c-020435b2dfba",
+      "key": "guestsUrl",
+      "value": "https://apisv2.logestechs.com/api/guests/",
+      "type": "string"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
