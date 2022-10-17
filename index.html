@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="CSS/popUp.css">
 
     <!-- java script -->
-    <!-- <script src="js/main.js" defer></script> -->
+    <script src="js/main.js" defer></script>
     <script src="js/api.js" defer></script>
     
     <title>TALABY</title>
@@ -90,17 +90,27 @@
                     طرود متجرك إلى العملاء <br>
                     في نفس اليوم
                 </h1>
-                <input id="trackerID" type="text" placeholder="ادخل رقم الطرد">
+                <input id="trackerID" type="text" placeholder="ادخل رقم الطرد" value="120515066428">
                 <button id="btnTrackMyPack">تتبع الطرد</button>
                 <div class="appLink b d">
                     <a href="#"><img src="img/app-store.png" alt=""></a>
                     <a href="#"><img src="img/google-play.png" alt=""></a>
                 </div>
 
-                <div class="overlay-response package-tracking disNon" id="packageTracking">
+                <div class="overlay-response package-tracking open dis Non" id="packageTracking">
                   <div class="trcking-container">
                     <span class="close" id="closePopUp">X</span>
-                    <h2>رقم الطرد : <span></span></h2>
+                    
+                    <h3>رقم الطرد : <span id="userBarcode"></span></h3>
+                    
+                    <div class="packInfo box">
+                      <h3>بيانات الشحنه</h3>
+                      <h4>الوزن: <span id="weight"></span></h4>
+                      <h4>الطول: <span id="length"></span></h4>
+                      <h4>العرض <span id="width"></span></h4>
+                    </div>
+                    
+                    <h3>اسم المرسل : <span id="senderName"></span></h3>
                   </div>
                 </div>
 

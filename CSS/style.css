@@ -185,7 +185,7 @@ nav ul li:hover span {
 /* ---------------------------------------- */
 
 main {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: var(--main-BG-clr);
 }
 main.landing{
@@ -204,8 +204,8 @@ main.landing{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: calc( 100vh - 80px);
-    margin-top: 80px;
+    height: calc( 100vh - 0px);
+    /* margin-top: 80px; */
 }
 
 .landing .container .item{
