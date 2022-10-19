@@ -90,7 +90,8 @@
                     طرود متجرك إلى العملاء <br>
                     في نفس اليوم
                 </h1>
-                <input id="trackerID" type="text" placeholder="ادخل رقم الطرد" value="120515066428">
+                <span class="packError" id="packError"></span>
+                <input id="trackerID" type="text" placeholder="ادخل رقم الطرد" value="">
                 <button id="btnTrackMyPack">تتبع الطرد</button>
                 <div class="appLink b d">
                     <a href="#"><img src="img/app-store.png" alt=""></a>
@@ -102,15 +103,27 @@
                     <span class="close" id="closePopUp">X</span>
                     
                     <h3>رقم الطرد : <span id="userBarcode"></span></h3>
-                    
-                    <div class="packInfo box">
+
+            <!-- بيانات الشحنه -->
+                  <div class="packInfo box">
                       <h3>بيانات الشحنه</h3>
                       <h4>الوزن: <span id="weight"></span></h4>
                       <h4>الطول: <span id="length"></span></h4>
                       <h4>العرض <span id="width"></span></h4>
                     </div>
+            <!-- بيانات الارسال -->
+                    <div class="packInfo box">
+                      <h3>بيانات الارسال</h3>
+                      <h4>اسم المرسل: <span id="senderName"></span></h4>
+                      <h4>رقم الهاتف: <span id="senderPhone"></span></h4>
+                    </div>
+            <!-- بيانات الاستقبال -->
+                    <div class="packInfo box">
+                      <h3>بيانات الاستقبال</h3>
+                      <h4>اسم المستقبل: <span id="receiverName"></span></h4>
+                      <h4>رقم الهاتف: <span id="receiverPhone"></span></h4>
+                    </div>
 
-                    <h3>اسم المرسل : <span id="senderName"></span></h3>
                   </div>
                 </div>
 

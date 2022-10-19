@@ -247,7 +247,7 @@ top: 44%;
 .landing .tard h1 {
     font-size: 1.7rem;
     padding: inherit;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     /* border: 1px solid #000; */
 }
 .landing .tard input {

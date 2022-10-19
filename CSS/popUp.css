@@ -4,7 +4,17 @@
   --main-NBG-clr: #FFFFFF;
   --main-HD-clr: #F2951C;
   --main-TXT-clr: #000000;
+  --err-txt-clr:rgb(255, 0, 0);
   --trans: all 0.25s ease-in-out;
+}
+
+.packError{
+  position: relative;
+  height: 20px;
+  bottom: 10px;
+  margin-right: 10px;
+  color: var(--err-txt-clr);
+  font-weight: bold;
 }
 .overlay-response{
   position: fixed;
