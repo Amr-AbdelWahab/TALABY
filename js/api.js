@@ -24,6 +24,7 @@ function trackMyPack() {
   if ( userBarcodeInput == "") {
     packError.innerHTML = "*برجاء إدخال رقم الطرد"
   }else{
+    packError.innerHTML = ""
     fetchPackageData();
     openPopUp();
     }
