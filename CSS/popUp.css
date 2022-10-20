@@ -7,7 +7,9 @@
   --err-txt-clr:rgb(255, 0, 0);
   --trans: all 0.25s ease-in-out;
 }
-
+.errText{
+  color: var(--err-txt-clr) !important;
+}
 .packError{
   position: relative;
   height: 20px;
@@ -45,6 +47,10 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .trcking-container .close:hover {
   transform: rotate(180deg) scale(1.2);
@@ -52,7 +58,7 @@
 
 .trcking-container {
   min-width: 300px;
-  min-height: 500px;
+  /* min-height: 200px; */
   padding: 30px;
   margin: auto;
   /* margin-top: -80px; */
@@ -66,7 +72,7 @@
 .trcking-container .box {
   position: relative;
   border: 1px solid rgb(197, 197, 197);
-  margin: 30px 0;
+  margin: 30px 0 0;
   padding: 10px;
   padding-top: 15px;
   border-radius: 10px;

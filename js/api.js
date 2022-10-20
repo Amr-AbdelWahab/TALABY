@@ -8,9 +8,9 @@ let btnTrackMyPack = document.getElementById("btnTrackMyPack");
 let btnClosePopUp = document.getElementById("closePopUp");
 let packageTracking = document.getElementById("packageTracking");
 
+let infoBoxes = document.querySelectorAll('.box');
 let inputTrackingBarcode = document.getElementById("trackerID");
 let packError = document.getElementById("packError");
-
 
 
 //Track My Pack
@@ -41,26 +41,35 @@ function fetchPackageData  (){
     })
   
     .then(function (data) {
-      // Barcode number
+      //! Barcode number Checker
       if (data.barcode == undefined){
-        document.getElementById("userBarcode").innerHTML = "رقم الشحنة غير صحيح";
+        infoBoxes.forEach((box) =>{
+          box.classList.add('disNon');
+        })
+        document.getElementById("userBarcode").innerHTML = "*رقم الشحنة غير صحيح";
+        document.getElementById("userBarcode").classList.add('errText');
       }else{
+        infoBoxes.forEach((box) =>{
+          box.classList.remove('disNon');
+        });
+        //! Barcode number
         document.getElementById("userBarcode").innerHTML = data.barcode;
+        document.getElementById("userBarcode").classList.remove('errText');
+
+        //* Pack Info
+        document.getElementById("weight").innerHTML = data.width + " كجم";
+        document.getElementById("length").innerHTML = data.length + " سم";
+        document.getElementById("width").innerHTML = data.width + " سم";
+    
+        //* Sender Name
+        // let senderNameUser = data.senderFirstName +" "+ data.senderMiddleName;
+        document.getElementById("senderName").innerHTML = data.fullSenderName;
+        document.getElementById("senderPhone").innerHTML = data.senderPhone;
+    
+        //* Receiver Name
+        document.getElementById("receiverName").innerHTML = data.fullReceiverName;
+        document.getElementById("receiverPhone").innerHTML = data.receiverPhone;
       }
-  
-      // Pack Info
-      document.getElementById("weight").innerHTML = data.width + " كجم";
-      document.getElementById("length").innerHTML = data.length + " سم";
-      document.getElementById("width").innerHTML = data.width + " سم";
-  
-      // Sender Name
-      // let senderNameUser = data.senderFirstName +" "+ data.senderMiddleName;
-      document.getElementById("senderName").innerHTML = data.fullSenderName;
-      document.getElementById("senderPhone").innerHTML = data.senderPhone;
-  
-      // Receiver Name
-      document.getElementById("receiverName").innerHTML = data.fullReceiverName;
-      document.getElementById("receiverPhone").innerHTML = data.receiverPhone;
     });
 }
 
