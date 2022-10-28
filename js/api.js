@@ -75,7 +75,7 @@ function fetchPackageData  (){
 
 
 
-//Open PopUp Window
+//Open PopUp Package Tracking Window
 function openPopUp() {
   packageTracking.classList.remove("disNon");
   setTimeout(scaleUp, 50);
@@ -84,7 +84,7 @@ function openPopUp() {
   }
 }
 
-//Close PopUp Window
+//Close PopUp Package Tracking Window
 btnClosePopUp.addEventListener("click", closePopUp);
 
 function closePopUp() {
@@ -94,3 +94,4 @@ function closePopUp() {
     packageTracking.classList.add("disNon");
   }
 }
+

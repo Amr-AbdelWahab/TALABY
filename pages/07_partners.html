@@ -26,11 +26,12 @@
     <!-- Partners -->
     <link rel="stylesheet" href="../CSS/Partners.css" />
     
-    <link rel="stylesheet" href="CSS/max1200.css">
-    <link rel="stylesheet" href="CSS/popUp.css">
+    <link rel="stylesheet" href="../CSS/max1200.css">
+    <link rel="stylesheet" href="../CSS/popUp.css">
 
     <!-- java script -->
     <script src="../js/main.js" defer></script>
+    <script src="../js/logPopUp.js" defer></script>
 
     <title>TALABY_Partners</title>
 </head>
@@ -60,10 +61,10 @@
                 <ul class="" id="links">
                     <div class="overlay"></div>
                     <li>
-                        <a href="#">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a>
+                        <a id="login">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a>
                     </li>
                     <li>
-                        <a href="#">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a>
+                        <a id="logUp">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a>
                     </li>
                     <li>
                         <a href="#">شركاء طلبي <span>شركاء طلبي</span></a>
@@ -75,6 +76,83 @@
             </div>
         </nav>
     </header>
+
+
+
+  <!-- !---------------------------------------
+  !----------Login Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-login op en" id="overlay-login">
+    <div class="login-content">
+      <span class="close" id="closePopUpLogin">X</span>
+      <h3>تسجيل الدخول</h3>
+      <br />
+      <form action="00_loginData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password" class="label">كلمة المرور</label>
+          <input type="password" id="password" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل دخول</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- !---------------------------------------
+  !----------LogUp Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-logUp op en" id="overlay-logUp">
+    <div class="logUp-content">
+      <span class="close" id="closePopUpLogUp">X</span>
+      <h3>إنشاء حساب كتاجر</h3>
+      <br />
+      <form action="00_logUpData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Email -->
+        <div class="input-group">
+          <label for="userEmail" class="label">البريد الاكتروني</label>
+          <input type="email" id="userEmail" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password1" class="label">كلمة المرور</label>
+          <input type="password" id="password1" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password2" class="label">اعادة كلمة المرور</label>
+          <input type="password" id="password2" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل الحساب</button>
+      </form>
+    </div>
+  </div>
+
 
     <!------------------------------------------ */
     /* ------LANDING------------------------ */
@@ -192,7 +270,7 @@
 
             <div class="links">
                 <a href="05_ِQ_A.html">الأسئلة الشائعة</a>
-                <a href="#">سياسة الخصوصية</a>
+                <a href="06_Privacy.html">سياسة الخصوصية</a>
                 <a href="#">حماية حقوق المستفيدين</a>
             </div>
 

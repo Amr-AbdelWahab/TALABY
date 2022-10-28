@@ -1,341 +1,419 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- google-fonts. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Cairo:wght@200;300&family=Great+Vibes&family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- google-fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Cairo:wght@200;300&family=Great+Vibes&family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
+  <!-- normalize -->
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="CSS/all.min.css" />
+  <!-- My style -->
+  <link rel="stylesheet" href="CSS/3amr.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/mob_Style.css" />
+  <link rel="stylesheet" href="CSS/max1200.css" />
+  <link rel="stylesheet" href="CSS/popUp.css" />
 
+  <!-- java script -->
+  <script src="js/main.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/logPopUp.js" defer></script>
 
-    <!-- normalize -->
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="CSS/all.min.css">
-    <!-- My style -->
-    <link rel="stylesheet" href="CSS/3amr.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/mob_Style.css">
-    <link rel="stylesheet" href="CSS/max1200.css">
-    <link rel="stylesheet" href="CSS/popUp.css">
-
-    <!-- java script -->
-    <script src="js/main.js" defer></script>
-    <script src="js/api.js" defer></script>
-    
-    <title>TALABY</title>
+  <title>TALABY</title>
 </head>
 
-
-
-
 <body dir="rtl">
-    <header>
-
-<!------------------------------------------ */
+  <header>
+    <!------------------------------------------ */
 /* ------NAV BAR------------------------ */
 /* ---------------------------------------- */ -->
 
-        <nav>
-            <div class="container">
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <p>
+            <a href="#"><img src="img/logo.png" alt="" /></a>
+          </p>
+          <p></p>
+          <p>حلول توصيل الطرود</p>
+        </div>
 
-                <div class="logo">
-                    <p><a href="#"><img src="img/logo.png" alt=""></a></p>
-                    <p></p>
-                    <p>حلول توصيل الطرود</p>
-                </div>
+        <div class="ham" id="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-                <div class="ham " id="ham">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <ul class="" id="links">
+          <div class="overlay"></div>
+          <li>
+            <a id="login">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a>
+          </li>
+          <li>
+            <a id="logUp">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a>
+          </li>
+          <li>
+            <a href="pages/07_partners.html">شركاء طلبي <span>شركاء طلبي</span></a>
+          </li>
+          <li>
+            <a href="#">English <span>English</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-                <ul class="" id="links">
-                    <div class="overlay"></div>
-                    <li><a href="#">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a></li>
-                    <li><a href="#">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a> </li>
-                    <li><a href="pages/07_partners.html">شركاء طلبي <span>شركاء طلبي</span></a></li>
-                    <li><a href="#">English <span>English</span></a></li>
-                </ul>
-    
-            </div>
-        </nav>
-    </header>
+  <!-- !---------------------------------------
+  !----------Login Form---------------------
+  !------------------------------------------->
 
-<!------------------------------------------ */
+  <div class="overlay-login op en" id="overlay-login">
+    <div class="login-content">
+      <span class="close" id="closePopUpLogin">X</span>
+      <h3>تسجيل الدخول</h3>
+      <br />
+      <form action="pages/00_loginData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password" class="label">كلمة المرور</label>
+          <input type="password" id="password" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل دخول</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- !---------------------------------------
+  !----------LogUp Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-logUp op en" id="overlay-logUp">
+    <div class="logUp-content">
+      <span class="close" id="closePopUpLogUp">X</span>
+      <h3>إنشاء حساب كتاجر</h3>
+      <br />
+      <form action="pages/00_logUpData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Email -->
+        <div class="input-group">
+          <label for="userEmail" class="label">البريد الاكتروني</label>
+          <input type="email" id="userEmail" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password1" class="label">كلمة المرور</label>
+          <input type="password" id="password1" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password2" class="label">اعادة كلمة المرور</label>
+          <input type="password" id="password2" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل الحساب</button>
+      </form>
+    </div>
+  </div>
+
+  <!------------------------------------------ */
 /* ------LANDING------------------------ */
 /* ---------------------------------------- */ -->
 
-    <main class="landing">
-        <!-- <p>
+  <main class="landing">
+    <!-- <p>
             Android و  IOS تطبيق طلبي متاح لمستخدمي
             :للتمتع بالعديد من المميزات التالية
         </p> -->
-        <div class="container b d">
+    <div class="container b d">
+      <div class="item b d d n">
+        <img src="img/lnd/lnd1.png" alt="" />
+        <img src="img/lnd/lnd2.png" alt="" />
+        <img src="img/lnd/lnd3.png" alt="" />
+      </div>
 
-            <div class="item b d d n">
-                <img src="img/lnd/lnd1.png" alt="">
-                <img src="img/lnd/lnd2.png" alt="">
-                <img src="img/lnd/lnd3.png" alt="">
-            </div>
-
-            <div class="tard b d d n">
-                <h1>
-                    نقدم خدمات توصيل <br>
-                    طرود متجرك إلى العملاء <br>
-                    في نفس اليوم
-                </h1>
-                <span class="packError" id="packError"></span>
-                <input id="trackerID" type="text" placeholder="ادخل رقم الطرد" value="">
-                <button id="btnTrackMyPack">تتبع الطرد</button>
-                <div class="appLink b d">
-                    <a href="#"><img src="img/app-store.png" alt=""></a>
-                    <a href="#"><img src="img/google-play.png" alt=""></a>
-                </div>
-
-                <div class="overlay-response package-tracking op en dis Non" id="packageTracking">
-                  <div class="trcking-container">
-                    <span class="close" id="closePopUp">X</span>
-                    
-                    <h3>رقم الطرد : <span id="userBarcode" class=""></span></h3>
-
-            <!-- بيانات الشحنه -->
-                  <div class="packInfo box disNon">
-                      <h3>بيانات الشحنه</h3>
-                      <h4>الوزن: <span id="weight"></span></h4>
-                      <h4>الطول: <span id="length"></span></h4>
-                      <h4>العرض <span id="width"></span></h4>
-                    </div>
-            <!-- بيانات الارسال -->
-                    <div class="packInfo box disNon">
-                      <h3>بيانات الارسال</h3>
-                      <h4>اسم المرسل: <span id="senderName"></span></h4>
-                      <h4>رقم الهاتف: <span id="senderPhone"></span></h4>
-                    </div>
-            <!-- بيانات الاستقبال -->
-                    <div class="packInfo box disNon">
-                      <h3>بيانات الاستقبال</h3>
-                      <h4>اسم المستقبل: <span id="receiverName"></span></h4>
-                      <h4>رقم الهاتف: <span id="receiverPhone"></span></h4>
-                    </div>
-
-                  </div>
-                </div>
-
-            </div>
-
+      <div class="tard b d d n">
+        <h1>
+          نقدم خدمات توصيل <br />
+          طرود متجرك إلى العملاء <br />
+          في نفس اليوم
+        </h1>
+        <span class="packError" id="packError"></span>
+        <input id="trackerID" type="text" placeholder="ادخل رقم الطرد" value="" />
+        <button id="btnTrackMyPack">تتبع الطرد</button>
+        <div class="appLink b d">
+          <a href="#"><img src="img/app-store.png" alt="" /></a>
+          <a href="#"><img src="img/google-play.png" alt="" /></a>
         </div>
+      </div>
+    </div>
+  </main>
 
-    </main>
+  <!-- !---------------------------------------
+!----------package-tracking----------------
+!------------------------------------------->
+  <div class="overlay-response package-tracking op en dis Non" id="packageTracking">
+    <div class="trcking-container">
+      <span class="close" id="closePopUp">X</span>
 
-<!------------------------------------------ */
+      <h3>رقم الطرد : <span id="userBarcode" class=""></span></h3>
+
+      <!-- بيانات الشحنه -->
+      <div class="packInfo box disNon">
+        <h3>بيانات الشحنه</h3>
+        <h4>الوزن: <span id="weight"></span></h4>
+        <h4>الطول: <span id="length"></span></h4>
+        <h4>العرض <span id="width"></span></h4>
+      </div>
+      <!-- بيانات الارسال -->
+      <div class="packInfo box disNon">
+        <h3>بيانات الارسال</h3>
+        <h4>اسم المرسل: <span id="senderName"></span></h4>
+        <h4>رقم الهاتف: <span id="senderPhone"></span></h4>
+      </div>
+      <!-- بيانات الاستقبال -->
+      <div class="packInfo box disNon">
+        <h3>بيانات الاستقبال</h3>
+        <h4>اسم المستقبل: <span id="receiverName"></span></h4>
+        <h4>رقم الهاتف: <span id="receiverPhone"></span></h4>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------ */
 /* ------SECTION 1--------------------- */
 /* ---------------------------------------- */ -->
 
-    <section class="sec1 b d">
-        <div class="container b d">
+  <section class="sec1 b d">
+    <div class="container b d">
+      <div class="item itemCarMob b d d n">
+        <img src="img/carMob/carMob1.png" alt="" />
+        <img src="img/carMob/carMob2.png" alt="" />
+        <img src="img/carMob/carMob3.png" alt="" />
+      </div>
 
-            <div class="item itemCarMob b d d n">
-                <img src="img/carMob/carMob1.png" alt="">
-                <img src="img/carMob/carMob2.png" alt="">
-                <img src="img/carMob/carMob3.png" alt="">
-            </div>
+      <div class="description b d">
+        <h2 dir="rtl">
+          تطبيق طلبي متاح لمستخدمي
+          <span>IOS</span>
+          و
+          <span>Android</span><br />
+          للتمتع بالعديد من المميزات التالية :
+        </h2>
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>استقبال وانشاء الطلبات
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>إدارة الطرود واصدار
+            البوليصات
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>إضافة الشعار الخاص بمتجرك
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>تتبع حالة الطرود ومتابعتها
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>تنبيهات فورية عن حالة الطلب
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>معرفة مراكز الإستلام المتاحة
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>تقارير مباشرة ومفصلة عن كل
+            طرد
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-            <div class="description b d">
-                <h2 dir="rtl">
-                    تطبيق طلبي متاح لمستخدمي 
-                    <span>IOS</span>
-                    و
-                    <span>Android</span><br>
-                    للتمتع بالعديد من المميزات التالية :
-                </h2>
-                <ul>
-                    <li><i class="fa-solid fa-circle-dot"></i>استقبال وانشاء الطلبات</li>
-                    <li><i class="fa-solid fa-circle-dot"></i>إدارة الطرود واصدار البوليصات</li>
-                    <li><i class="fa-solid fa-circle-dot"></i>إضافة الشعار الخاص بمتجرك</li>
-                    <li><i class="fa-solid fa-circle-dot"></i>تتبع حالة الطرود ومتابعتها </li>
-                    <li><i class="fa-solid fa-circle-dot"></i>تنبيهات فورية عن حالة الطلب</li>
-                    <li><i class="fa-solid fa-circle-dot"></i>معرفة مراكز الإستلام المتاحة</li>
-                    <li><i class="fa-solid fa-circle-dot"></i>تقارير مباشرة ومفصلة عن كل طرد</li>
-                </ul>
-            </div>
-
-        </div>
-
-    </section>
-
-<!------------------------------------------ */
+  <!------------------------------------------ */
 /* ------SECTION 2--------------------- */
 /* ---------------------------------------- */ -->
 
-    <section class="sec2">
-        <div class="container">
-            <h2>لماذا نحن ؟</h2>
+  <section class="sec2">
+    <div class="container">
+      <h2>لماذا نحن ؟</h2>
 
-            <div class="features">
-
-<!-- 01-اسعار -->
-                <div class="card logo1">
-                    <div class="cardLogo">
-                        <img src="img/Why/01-اسعار/01-اسعار0.png" alt="أسعار تنافسية">
-                        <img src="img/Why/01-اسعار/01-اسعار0.png" alt="أسعار تنافسية">
-                        <img src="img/Why/01-اسعار/01-اسعار1.png" alt="أسعار تنافسية">
-                    </div>
-                    <h3>أسعار تنافسية</h3>
-                    <p> 
-                        يتم تحديد السعر بناء على   <br> 
-                        متوسط عدد الطرود شهريا 
-                    </p>
-                </div>
-
-<!-- 02-التوصيل -->
-                <div class="card logo2">
-                    <div class="cardLogo">
-                        <img src="img/Why/02-التوصيل/02-التوصيل.png" alt="التوصيل السريع">
-                        <img src="img/Why/02-التوصيل/02-التوصيل0.png" alt="التوصيل السريع">
-                        <img src="img/Why/02-التوصيل/02-التوصيل1.png" alt="التوصيل السريع">
-                    </div>
-                    <h3> التوصيل السريع</h3>
-                    <p> 
-                        يتم توصيل الطرود   <br> 
-                        24 خلال ساعة
-                    </p>
-                </div>
-
-<!-- 03-الطرود -->
-                <div class="card logo3">
-                    <div class="cardLogo">
-                        <img src="img/Why/03-الطرود/03-الطرود.png" alt="التوصيل السريع">
-                        <img src="img/Why/03-الطرود/03-الطرود0.png" alt="التوصيل السريع">
-                        <img src="img/Why/03-الطرود/03-الطرود1.png" alt="التوصيل السريع">
-                    </div>
-                    <h3> الطرود الناجحة </h3>
-                    <p> 
-                        يتم احتساب مبالغ الطرود  <br> 
-                        التي تم توصيلها فقط
-                    </p>
-                </div>
-
-<!-- 04-الربط -->
-                <div class="card logo4">
-                    <div class="cardLogo">
-                        <img src="img/Why/04-الربط/04-الربط.png" alt="التوصيل السريع">
-                        <img src="img/Why/04-الربط/04-الربط0.png" alt="التوصيل السريع">
-                        <img src="img/Why/04-الربط/04-الربط1.png" alt="التوصيل السريع">
-                    </div>
-                    <h3> طرق ربط متعددة</h3>
-                    <p> 
-                        نقدم ربط مباشر وسريع <br> 
-                        مع جميع أنظمة التجارة <br>
-                        الالكترونية <span>(API)</span>
-                    </p>
-                </div>
-
-<!-- 05-خدمة العملاء-->
-                <div class="card logo5">
-                    <div class="cardLogo b d">
-                        <img src="img/Why/05-خدمة/05-خدمة.png" alt=" خدمة العملاء">
-                        <img src="img/Why/05-خدمة/05-خدمة0.png" alt=" خدمة العملاء">
-                        <img src="img/Why/05-خدمة/05-خدمة1.png" alt=" خدمة العملاء">
-                        <img src="img/Why/05-خدمة/05-خدمة2.png" alt=" خدمة العملاء">
-                    </div>
-                    <h3> خدمة العملاء</h3>
-                    <p> 
-                        نعمل في طلبي على خدمة <br> 
-                        عملائنا بطريقة احترافية <br>
-                        وتقديم أفضل خدمة لهم
-                    </p>
-                </div>
-
-<!-- 06-وسائل دفع مرنة -->
-                <div class="card logo6">
-                    <div class="cardLogo">
-                        <img src="img/Why/06-الدفع/06-الدفع.png" alt=" وسائل دفع مرنة ">
-                        <img src="img/Why/06-الدفع/06-الدفع0.png" alt=" وسائل دفع مرنة ">
-                        <img src="img/Why/06-الدفع/06-الدفع1.png" alt=" وسائل دفع مرنة ">
-                    </div>
-                    <h3> وسائل دفع مرنة </h3>
-                    <p> 
-                        تحويل بنكي <br> 
-                        دفع نقدي <br>
-                        أجهزة نقاط البيع
-                    </p>
-                </div>
-
-            </div>
-
+      <div class="features">
+        <!-- 01-اسعار -->
+        <div class="card logo1">
+          <div class="cardLogo">
+            <img src="img/Why/01-اسعار/01-اسعار0.png" alt="أسعار تنافسية" />
+            <img src="img/Why/01-اسعار/01-اسعار0.png" alt="أسعار تنافسية" />
+            <img src="img/Why/01-اسعار/01-اسعار1.png" alt="أسعار تنافسية" />
+          </div>
+          <h3>أسعار تنافسية</h3>
+          <p>
+            يتم تحديد السعر بناء على <br />
+            متوسط عدد الطرود شهريا
+          </p>
         </div>
 
-    </section>
+        <!-- 02-التوصيل -->
+        <div class="card logo2">
+          <div class="cardLogo">
+            <img src="img/Why/02-التوصيل/02-التوصيل.png" alt="التوصيل السريع" />
+            <img src="img/Why/02-التوصيل/02-التوصيل0.png" alt="التوصيل السريع" />
+            <img src="img/Why/02-التوصيل/02-التوصيل1.png" alt="التوصيل السريع" />
+          </div>
+          <h3>التوصيل السريع</h3>
+          <p>
+            يتم توصيل الطرود <br />
+            24 خلال ساعة
+          </p>
+        </div>
 
-<!------------------------------------------ */
+        <!-- 03-الطرود -->
+        <div class="card logo3">
+          <div class="cardLogo">
+            <img src="img/Why/03-الطرود/03-الطرود.png" alt="التوصيل السريع" />
+            <img src="img/Why/03-الطرود/03-الطرود0.png" alt="التوصيل السريع" />
+            <img src="img/Why/03-الطرود/03-الطرود1.png" alt="التوصيل السريع" />
+          </div>
+          <h3>الطرود الناجحة</h3>
+          <p>
+            يتم احتساب مبالغ الطرود <br />
+            التي تم توصيلها فقط
+          </p>
+        </div>
+
+        <!-- 04-الربط -->
+        <div class="card logo4">
+          <div class="cardLogo">
+            <img src="img/Why/04-الربط/04-الربط.png" alt="التوصيل السريع" />
+            <img src="img/Why/04-الربط/04-الربط0.png" alt="التوصيل السريع" />
+            <img src="img/Why/04-الربط/04-الربط1.png" alt="التوصيل السريع" />
+          </div>
+          <h3>طرق ربط متعددة</h3>
+          <p>
+            نقدم ربط مباشر وسريع <br />
+            مع جميع أنظمة التجارة <br />
+            الالكترونية <span>(API)</span>
+          </p>
+        </div>
+
+        <!-- 05-خدمة العملاء-->
+        <div class="card logo5">
+          <div class="cardLogo b d">
+            <img src="img/Why/05-خدمة/05-خدمة.png" alt=" خدمة العملاء" />
+            <img src="img/Why/05-خدمة/05-خدمة0.png" alt=" خدمة العملاء" />
+            <img src="img/Why/05-خدمة/05-خدمة1.png" alt=" خدمة العملاء" />
+            <img src="img/Why/05-خدمة/05-خدمة2.png" alt=" خدمة العملاء" />
+          </div>
+          <h3>خدمة العملاء</h3>
+          <p>
+            نعمل في طلبي على خدمة <br />
+            عملائنا بطريقة احترافية <br />
+            وتقديم أفضل خدمة لهم
+          </p>
+        </div>
+
+        <!-- 06-وسائل دفع مرنة -->
+        <div class="card logo6">
+          <div class="cardLogo">
+            <img src="img/Why/06-الدفع/06-الدفع.png" alt=" وسائل دفع مرنة " />
+            <img src="img/Why/06-الدفع/06-الدفع0.png" alt=" وسائل دفع مرنة " />
+            <img src="img/Why/06-الدفع/06-الدفع1.png" alt=" وسائل دفع مرنة " />
+          </div>
+          <h3>وسائل دفع مرنة</h3>
+          <p>
+            تحويل بنكي <br />
+            دفع نقدي <br />
+            أجهزة نقاط البيع
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------ */
 /* ------LAST SECTION------------------------ */
 /* ---------------------------------------- */ -->
 
-    <div class="last b-d">
-        <!-- <p><a href="pages/03_mnadeb.html">انضم إلى فريق المناديب الخاص بنا <span>انضم إلى فريق المناديب الخاص بنا</span></a></p> -->
-    </div>
+  <div class="last b-d">
+    <!-- <p><a href="pages/03_mnadeb.html">انضم إلى فريق المناديب الخاص بنا <span>انضم إلى فريق المناديب الخاص بنا</span></a></p> -->
+  </div>
 
-
-
-
-
-<!------------------------------------------ */
+  <!------------------------------------------ */
 /* ------FOOTER--------------------------- */
 /* ---------------------------------------- */ -->
 
-    <footer>
-        <div class="cont-foot">
-            
-            <div class="links">
-                <a href="pages/04_about_Us.html">من نحن</a>
-                <a href="pages/02_contact_Us.html"> اتصل بنا</a>
-                <a href="pages/03_mnadeb.html">انضم إلى فريق المناديب </a>
-            </div>
+  <footer>
+    <div class="cont-foot">
+      <div class="links">
+        <a href="pages/04_about_Us.html">من نحن</a>
+        <a href="pages/02_contact_Us.html"> اتصل بنا</a>
+        <a href="pages/03_mnadeb.html">انضم إلى فريق المناديب </a>
+      </div>
 
-            <div class="links">
-                <a href="pages/05_ِQ_A.html">الأسئلة الشائعة</a>
-                <a href="pages/06_Privacy.html">سياسة الخصوصية</a>
-                <a href="#">حماية حقوق المستفيدين</a>
-            </div>
+      <div class="links">
+        <a href="pages/05_ِQ_A.html">الأسئلة الشائعة</a>
+        <a href="pages/06_Privacy.html">سياسة الخصوصية</a>
+        <a href="#">حماية حقوق المستفيدين</a>
+      </div>
 
-            <div class="social-footer b-d">
-                <div class="social">
-                    <!-- <img src="img/social/تويتر.png" alt="تويتر" > -->
-                    <a href="#" title="الهاتف"><i class="fa-solid fa-phone"></i></a>
-                    <a href="#" title="البريد"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="#" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" title="تويتر"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-                <a href="#"><img src="img/app-store.png" alt=""></a>
-                <a href="#"><img src="img/google-play.png" alt=""></a>
-            </div>
-
+      <div class="social-footer b-d">
+        <div class="social">
+          <!-- <img src="img/social/تويتر.png" alt="تويتر" > -->
+          <a href="#" title="الهاتف"><i class="fa-solid fa-phone"></i></a>
+          <a href="#" title="البريد"><i class="fa-regular fa-envelope"></i></a>
+          <a href="#" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="تويتر"><i class="fa-brands fa-twitter"></i></a>
         </div>
+        <a href="#"><img src="img/app-store.png" alt="" /></a>
+        <a href="#"><img src="img/google-play.png" alt="" /></a>
+      </div>
+    </div>
 
+    <!-- ----- -->
 
-        <!-- ----- -->
-
-
-        <p>جميع الحقوق محفوظة 
-            <span>لطلبي</span> 
-            <span> © 2022 </span>
-            <!-- <span>  |  </span>
+    <p>
+      جميع الحقوق محفوظة
+      <span>لطلبي</span>
+      <span> © 2022 </span>
+      <!-- <span>  |  </span>
             <span>Developed by </span>
             <a href="#">tawarserty </a> -->
-        </p>
+    </p>
 
-        <!-- ----- -->
+    <!-- ----- -->
 
-        <img src="img/footer-left.png" alt="">
-        
-    </footer>
-
-    
+    <img src="img/footer-left.png" alt="" />
+  </footer>
 </body>
+
 </html>

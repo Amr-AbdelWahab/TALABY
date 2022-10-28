@@ -18,7 +18,10 @@
   color: var(--err-txt-clr);
   font-weight: bold;
 }
-.overlay-response{
+.overlay-response,
+.overlay-login,
+.overlay-logUp
+{
   position: fixed;
   top: 0;
   left: 0;
@@ -27,13 +30,19 @@
   background-color: #0000009d;
   scale: 0.01;
   opacity: 0;
-  z-index: 100;
+  z-index: 101;
 }
-.overlay-response.open{
+.overlay-response.open,
+.overlay-login.open,
+.overlay-logUp.open
+{
   scale: 1;
   opacity: 1;
 }
-.trcking-container .close {
+.trcking-container .close,
+.overlay-login .close,
+.overlay-logUp .close
+{
   color: var(--main-TXT-clr);
   background-color: var(--main-HD-clr);
   display: inline-block;
@@ -41,7 +50,7 @@
   font-weight: bold;
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   text-align: center;
   border-radius: 50%;
   width: 20px;
@@ -56,7 +65,10 @@
   transform: rotate(180deg) scale(1.2);
 }
 
-.trcking-container {
+.trcking-container,
+.login-content,
+.logUp-content
+{
   min-width: 300px;
   /* min-height: 200px; */
   padding: 30px;
@@ -97,4 +109,52 @@
 }
 .trcking-container h4 {
   margin: 5px 0;
+}
+
+.login-content h3,
+.logUp-content h3
+{
+  color: var(--main-HD-clr);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.login-content label,
+.logUp-content label
+{
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.login-content input,
+.logUp-content input
+{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #777;
+}
+.login-content button,
+.logUp-content button
+{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--main-HD-clr);
+  color: var( --main-BG-clr);
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-content button:hover,
+.logUp-content button:hover
+{
+  transform: scale(1.05);
 }
