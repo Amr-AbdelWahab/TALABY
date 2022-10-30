@@ -34,13 +34,13 @@
     top: 50%;
     left: 50%;
 }
-.mndob .item:hover img[src="../img/mnadeb/mnadeb1.png"] {
+.mndob .item:hover img:nth-child(2) {
     left: 70%;
     }
-.mndob .item:hover img[src="../img/mnadeb/mnadeb2.png"] {
+.mndob .item:hover img:nth-child(3) {
     top: 40%;
     }
-.mndob .item:hover img[src="../img/mnadeb/mnadeb3.png"] {
+.mndob .item:hover img:nth-child(4) {
     left: 40%;
     }
     .go2next{

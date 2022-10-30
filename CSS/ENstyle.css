@@ -27,3 +27,9 @@
   margin-right: 1rem;
   color: var(--main-HD-clr);
 }
+
+.aboutLanding .container .description{
+  margin-right: 0;
+  margin-left: 20px;
+}
+

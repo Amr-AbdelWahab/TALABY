@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
@@ -14,31 +14,33 @@
         rel="stylesheet" />
 
     <!-- normalize -->
-    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../../CSS/normalize.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../../CSS/all.min.css" />
     <!-- My style -->
-    <link rel="stylesheet" href="../CSS/3amr.css" />
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/mob_Style.css" />
+    <link rel="stylesheet" href="../../CSS/3amr.css" />
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="../../CSS/mob_Style.css" />
     <!-- contact Us -->
-    <link rel="stylesheet" href="../CSS/contact_Us.css" />
+    <link rel="stylesheet" href="../../CSS/contact_Us.css" />
     <!-- مناديب -->
-    <link rel="stylesheet" href="../CSS/mnadeb.css" />
+    <link rel="stylesheet" href="../../CSS/mnadeb.css" />
     <!-- About Us -->
-    <link rel="stylesheet" href="../CSS/About_Us.css" />
+    <link rel="stylesheet" href="../../CSS/About_Us.css" />
     
-    <link rel="stylesheet" href="../CSS/max1200.css">
-    <link rel="stylesheet" href="../CSS/popUp.css" />
+    <link rel="stylesheet" href="../../CSS/max1200.css">
+    <link rel="stylesheet" href="../../CSS/ENstyle.css">
+
+    <link rel="stylesheet" href="../../CSS/popUp.css" />
 
     <!-- java script -->
-    <script src="../js/main.js" defer></script>
-    <script src="../js/logPopUp.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/logPopUp.js" defer></script>
     
     <title>TALABY_About Us</title>
 </head>
 
-<body dir="rtl">
+<body dir="ltr">
     <header>
    <!------------------------------------------ */
     /* ------NAV BAR------------------------ */
@@ -47,11 +49,9 @@
         <nav>
             <div class="container">
                 <div class="logo">
-                    <p>
-                        <a href="../index.html"><img src="../img/logo.png" alt="" /></a>
-                    </p>
+                    <p><a href="00_EN_main.html"><img src="../../img/logo.png" alt="logo" /></a></p>
                     <p></p>
-                    <p>حلول توصيل الطرود</p>
+                    <p><strong>Parcel delivery solutions</strong></p>
                 </div>
 
                 <div class="ham" id="ham">
@@ -63,16 +63,16 @@
                 <ul class="" id="links">
                     <div class="overlay"></div>
                     <li>
-                        <a id="login">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a>
+                        <a id="login">Merchant Login <span>Merchant Login</span></a>
                     </li>
                     <li>
-                        <a id="logUp">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a>
+                        <a id="logUp">Merchant signUp<span>Merchant signUp</span> </a>
                     </li>
                     <li>
-                        <a href="07_partners.html">شركاء طلبي <span>شركاء طلبي</span></a>
+                        <a href="../ENG/07_EN_partners.html">TALABY Partners <span>TALABY Partners</span></a>
                     </li>
                     <li>
-                        <a href="#">English <span>English</span></a>
+                        <a href="../04_about_Us.html">العربية <span>العربية</span></a>
                     </li>
                 </ul>
             </div>
@@ -87,25 +87,25 @@
   <div class="overlay-login op en" id="overlay-login">
     <div class="login-content">
       <span class="close" id="closePopUpLogin">X</span>
-      <h3>تسجيل الدخول</h3>
+      <h3>Merchant Login</h3>
       <br />
-      <form action="00_loginData.html" id="form">
+      <form action="../00_loginData.html" id="form">
         <!-- * Username -->
         <div class="input-group">
-          <label for="username" class="label">اسم المستخدم</label>
+          <label for="username" class="label">UserName</label>
           <input type="text" id="username" class="input" />
           <span class="error-msg"></span>
         </div>
         <br>
         <!-- * Password -->
         <div class="input-group">
-          <label for="password" class="label">كلمة المرور</label>
+          <label for="password" class="label">Password</label>
           <input type="password" id="password" class="input" />
           <span class="error-msg"></span>
         </div>
         <br>
         <!-- * Submit -->
-        <button class="button" type="submit">تسجيل دخول</button>
+        <button class="button" type="submit">Login</button>
       </form>
     </div>
   </div>
@@ -117,42 +117,44 @@
   <div class="overlay-logUp op en" id="overlay-logUp">
     <div class="logUp-content">
       <span class="close" id="closePopUpLogUp">X</span>
-      <h3>إنشاء حساب كتاجر</h3>
+      <h3>Create Merchant Account </h3>
       <br />
-      <form action="00_logUpData.html" id="form">
+      <form action="../00_loginData.html" id="form">
         <!-- * Username -->
         <div class="input-group">
-          <label for="username" class="label">اسم المستخدم</label>
+          <label for="username" class="label">UserName</label>
           <input type="text" id="username" class="input" />
           <span class="error-msg"></span>
         </div>
         <br>
         <!-- * Email -->
         <div class="input-group">
-          <label for="userEmail" class="label">البريد الاكتروني</label>
+          <label for="userEmail" class="label">Email</label>
           <input type="email" id="userEmail" class="input" />
           <span class="error-msg"></span>
         </div>
         <br>
         <!-- * Password -->
         <div class="input-group">
-          <label for="password1" class="label">كلمة المرور</label>
+          <label for="password1" class="label">Password</label>
           <input type="password" id="password1" class="input" />
           <span class="error-msg"></span>
         </div>
         <br>
         <!-- * Password -->
         <div class="input-group">
-          <label for="password2" class="label">اعادة كلمة المرور</label>
+          <label for="password2" class="label">Confirm password</label>
           <input type="password" id="password2" class="input" />
           <span class="error-msg"></span>
         </div>
         <br>
         <!-- * Submit -->
-        <button class="button" type="submit">تسجيل الحساب</button>
+        <button class="button" type="submit">Sign Up</button>
       </form>
     </div>
   </div>
+
+
 
     <!------------------------------------------ */
     /* ------LANDING------------------------ */
@@ -163,22 +165,22 @@
 
 
             <div class="item cont b d ">
-                <img src="../img/about_us/about/about0.png" alt="" />
-                <img src="../img/about_us/about/about1.png" alt="" />
-                <img src="../img/about_us/about/about2.png" alt="" />
+                <img src="../../img/about_us/about/about0.png" alt="" />
+                <img src="../../img/about_us/about/about1.png" alt="" />
+                <img src="../../img/about_us/about/about2.png" alt="" />
             </div>
 
             <div class="description b d">
-                <h2>نبذة عنا:</h2>
+                <h2>About Us:</h2>
                 <p>
-                    <span>طلبي</span>
-                    تعمل كحلقة وصل ما بين المتجر والعميل <br>
-                    لإيصال الطرود بسرعة عالية <br>
-                    وبأسعار تنافسية
+                    <span>TALABY</span>
+                    acts as a link between the store <br>
+                    and the customer to deliver parcels <br>
+                    quickly at competitive prices
                 </p>
                 <a href="#goNext" class="seeMore">
                     <i class="fa-solid fa-arrow-down-short-wide"></i>
-                    رؤية المزيد
+                    See more
                 </a>
             </div>
         </div>
@@ -195,32 +197,32 @@
             
 <!-- رؤيتنا -->
                 <div class="description">
-                    <h2> رؤيتنا:</h2>
+                    <h2> Our Vision:</h2>
                     <p>
-                        أن نوفر خدمات لوجستية متكاملة ومرنة <br><br>
-                        تسهل التجارة الالكترونية لمنشأتك
+                      Providing integrated and flexible logistics services<br><br>
+                      that support e-commerce for your store
                     </p>
                     
                 </div>
 
 <!-- نستهدف -->
                 <div class="description">
-                    <h2> نستهدف:</h2>
-                    <p>المشاريع متناهية الصغر</p>
-                    <p>المشاريع الناشئة</p>
-                    <p>المشاريع المتوسطة</p>
+                    <h2> Our target customer:</h2>
+                    <p>Micro Enterprises</p>
+                    <p>Startups</p>
+                    <p>Medium Enterprises</p>
                 </div>
 
 <!-- رسالتنا -->
                 <div class="description">
-                    <h2> رسالتنا:</h2>
+                    <h2> Our Mission:</h2>
                     <p>
-                        أن نكبر وننجح معاً
+                      Growing Up and Succeeding Together
                     </p>
                     
                     <a href="#goNext2" class="seeMore">
                         <i class="fa-solid fa-arrow-down-short-wide"></i>
-                        رؤية المزيد
+                        See more
                     </a>
                 </div>
 
@@ -228,9 +230,9 @@
             </div>
 
             <div class="item cont b d ">
-                <img src="../img/about_us/up/up0.png" alt="" />
-                <img src="../img/about_us/up/up1.png" alt="" />
-                <img src="../img/about_us/up/up2.png" alt="" />
+                <img src="../../img/about_us/up/up0.png" alt="" />
+                <img src="../../img/about_us/up/up1.png" alt="" />
+                <img src="../../img/about_us/up/up2.png" alt="" />
             </div>
     
         </div>
@@ -245,75 +247,75 @@
 
     <section class=" services">
         <div class="container">
-            <h2>لماذا نحن ؟</h2>
+            <h2>Our Services</h2>
 
             <div class="features">
-<!-- 01-استلام -->
+<!-- 01-Receiving -->
                 <div class="card serv1">
                     <div class="cardLogo">
-                        <!-- <img src="../img/about_us/services/استلام/استلام.png" alt=" استلام"> -->
-                        <img src="../img/about_us/services/استلام/استلام0.png" alt=" استلام">
-                        <img src="../img/about_us/services/استلام/استلام1.png" alt=" استلام">
+                        <img src="../../img/about_us/services/استلام/استلام0.png" alt=" Receiving">
+                        <img src="../../img/about_us/services/استلام/استلام1.png" alt=" Receiving">
                     </div>
-                    <h3> استلام</h3>
+                    <h3> Receiving</h3>
                     <p> 
-                        نستلم المنتجات   <br> 
-                        من متاجركم 
+                      We receive products<br> 
+                      from your stores 
                     </p>
                 </div>
 
-<!-- 02-استقبال -->
+                
+<!-- 02-Reception -->
                 <div class="card serv2">
                     <div class="cardLogo">
-                        <img src="../img/about_us/services/استقبال/استقبال0.png" alt=" استقبال">
-                        <img src="../img/about_us/services/استقبال/استقبال1.png" alt=" استقبال">
+                        <img src="../../img/about_us/services/استقبال/استقبال0.png" alt=" Reception">
+                        <img src="../../img/about_us/services/استقبال/استقبال1.png" alt=" Reception">
                     </div>
-                    <h3>  استقبال</h3>
+                    <h3>Reception</h3>
                     <p> 
-                        نستقبل منتجاتكم   <br> 
-                        في مقرنا
+                      We receive your products<br> 
+                      at our headquarters
                     </p>
                 </div>
 
-<!-- 03-توصيل -->
+<!-- 03-Delivery -->
                 <div class="card serv3">
                     <div class="cardLogo">
-                        <img src="../img/about_us/services/توصيل/توصيل0.png" alt=" توصيل">
-                        <img src="../img/about_us/services/توصيل/توصيل1.png" alt=" توصيل">
+                        <img src="../../img/about_us/services/توصيل/توصيل0.png" alt=" Delivery">
+                        <img src="../../img/about_us/services/توصيل/توصيل1.png" alt=" Delivery">
                     </div>
-                    <h3> توصيل </h3>
+                    <h3> Delivery </h3>
                     <p> 
-                        توصيل الطرود  <br> 
-                        في مدينة الرياض فقط
+                      Parcel delivery  <br> 
+                      in Riyadh only
                     </p>
                 </div>
 
-<!-- 04-تواصل -->
+<!-- 04-Communication -->
                 <div class="card serv4">
                     <div class="cardLogo">
-                        <img src="../img/about_us/services/تواصل/تواصل0.png" alt=" تواصل">
-                        <img src="../img/about_us/services/تواصل/تواصل1.png" alt=" تواصل">
+                        <img src="../../img/about_us/services/تواصل/تواصل0.png" alt=" Communication">
+                        <img src="../../img/about_us/services/تواصل/تواصل1.png" alt=" Communication">
                     </div>
-                    <h3> تواصل</h3>
+                    <h3> Communication</h3>
                     <p> 
-                        التواصل مع عملائنا <br> 
-                        ومساعدتهم <br>
-                        والرد علي استفساراتهم   
+                      We support communication with <br> 
+                      our customers, help them<br>
+                      and respond to their inquiries   
                     </p>
                 </div>
 
-<!-- 05-تتبع-->
+<!-- 05-Tracking-->
                 <div class="card serv5">
                     <div class="cardLogo">
-                        <img src="../img/about_us/services/تتبع/تتبع0.png" alt=" تتبع">
-                        <img src="../img/about_us/services/تتبع/تتبع1.png" alt=" تتبع">
-                        <img src="../img/about_us/services/تتبع/تتبع2.png" alt=" تتبع">
+                        <img src="../../img/about_us/services/تتبع/تتبع0.png" alt=" Tracking">
+                        <img src="../../img/about_us/services/تتبع/تتبع1.png" alt=" Tracking">
+                        <img src="../../img/about_us/services/تتبع/تتبع2.png" alt=" Tracking">
                     </div>
-                    <h3> تتبع</h3>
+                    <h3> Tracking</h3>
                     <p> 
-                        تتبع الشحنات <br> 
-                        والاطلاع علي  <br>
-                        حالة الشحنة
+                      Shipment tracking service <br> 
+                      is available on TALABY website <br>
+                      to enable you to track your parcel
                     </p>
                 </div>
 
@@ -345,46 +347,46 @@
     /* ---------------------------------------- */ -->
 
     <footer>
-        <div class="cont-foot">
-            <div class="links">
-                <a href="#">من نحن</a>
-                <a href="02_contact_Us.html"> اتصل بنا</a>
-                <a href="03_mnadeb.html">انضم إلى فريق المناديب </a>
-            </div>
-
-            <div class="links">
-                <a href="05_ِQ_A.html">الأسئلة الشائعة</a>
-                <a href="06_Privacy.html">سياسة الخصوصية</a>
-                <a href="#">حماية حقوق المستفيدين</a>
-            </div>
-
-            <div class="social-footer b-d">
-                <div class="social">
-                    <!-- <img src="img/social/تويتر.png" alt="تويتر" > -->
-                    <a href="#" title="الهاتف"><i class="fa-solid fa-phone"></i></a>
-                    <a href="#" title="البريد"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="#" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" title="تويتر"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-                <a href="#"><img src="../img/app-store.png" alt="" /></a>
-                <a href="#"><img src="../img/google-play.png" alt="" /></a>
-            </div>
+      <div class="cont-foot">
+                
+        <div class="links">
+            <a href="#">About us</a>
+            <a href="../ENG/02_EN_contact_Us.html"> Contact Us</a>
+            <a href="../ENG/03_EN_mnadeb.html">Join our Team </a>
         </div>
+
+        <div class="links">
+            <a href="../ENG/05_ِEN_Q_A.html">FAQs</a>
+            <a href="../ENG/06_EN_Privacy.html">Privacy policy</a>
+            <a href="#">Protection of the rights of beneficiaries</a>
+        </div>
+
+        <div class="social-footer b-d">
+            <div class="social">
+                <a href="#" title="phone"><i class="fa-solid fa-phone"></i></a>
+                <a href="#" title="email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="#"><img src="../../img/app-store.png" alt=""></a>
+            <a href="#"><img src="../../img/google-play.png" alt=""></a>
+        </div>
+
+    </div>
 
         <!-- ----- -->
 
         <p>
-            جميع الحقوق محفوظة
-            <span>لطلبي</span>
-            <span> © 2022 </span>
-            <!-- <span> | </span>
-            <span>Developed by </span>
-            <a href="#">tawarserty </a> -->
-        </p>
+          © All Rights Reserved for
+          <span>TALABY</span>
+          <span></span>
+          <span>  |  </span>
+          <span> 2022 </span>
+    </p>
 
         <!-- ----- -->
 
-        <img src="../img/footer-left.png" alt="" />
+        <img class="footImg" src="../../img/footer-left.png" alt="" />
     </footer>
 </body>
 
