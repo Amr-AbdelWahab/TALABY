@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google-fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Cairo:wght@200;300&family=Great+Vibes&family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <!-- My style -->
+    <link rel="stylesheet" href="../CSS/3amr.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/mob_Style.css" />
+    <!-- contact Us -->
+    <link rel="stylesheet" href="../CSS/contact_Us.css" />
+    <!-- مناديب -->
+    <link rel="stylesheet" href="../CSS/mnadeb.css" />
+    <!-- About Us -->
+    <link rel="stylesheet" href="../CSS/About_Us.css" />
+    <!-- Q&A -->
+    <link rel="stylesheet" href="../CSS/Q&A.css" />
+    
+    <link rel="stylesheet" href="../CSS/max1200.css">
+    <link rel="stylesheet" href="../CSS/popUp.css">
+
+    <!-- java script -->
+    <script src="../js/main.js" defer></script>
+    <script src="../js/logPopUp.js" defer></script>
+
+    <title>TALABY_Q&A</title>
+</head>
+
+<body dir="rtl">
+    <header>
+   <!------------------------------------------ */
+    /* ------NAV BAR------------------------ */
+    /* --------------------------------------- */ -->
+
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <p>
+                        <a href="../index.html"><img src="../img/logo.png" alt="" /></a>
+                    </p>
+                    <p></p>
+                    <p>حلول توصيل الطرود</p>
+                </div>
+
+                <div class="ham" id="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="" id="links">
+                    <div class="overlay"></div>
+                    <li>
+                        <a id="login">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a>
+                    </li>
+                    <li>
+                        <a id="logUp">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a>
+                    </li>
+                    <li>
+                        <a href="07_partners.html">شركاء طلبي <span>شركاء طلبي</span></a>
+                    </li>
+                    <li>
+                        <a href="#">English <span>English</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+  <!-- !---------------------------------------
+  !----------Login Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-login op en" id="overlay-login">
+    <div class="login-content">
+      <span class="close" id="closePopUpLogin">X</span>
+      <h3>تسجيل الدخول</h3>
+      <br />
+      <form action="00_loginData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password" class="label">كلمة المرور</label>
+          <input type="password" id="password" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل دخول</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- !---------------------------------------
+  !----------LogUp Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-logUp op en" id="overlay-logUp">
+    <div class="logUp-content">
+      <span class="close" id="closePopUpLogUp">X</span>
+      <h3>إنشاء حساب كتاجر</h3>
+      <br />
+      <form action="00_logUpData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Email -->
+        <div class="input-group">
+          <label for="userEmail" class="label">البريد الاكتروني</label>
+          <input type="email" id="userEmail" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password1" class="label">كلمة المرور</label>
+          <input type="password" id="password1" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password2" class="label">اعادة كلمة المرور</label>
+          <input type="password" id="password2" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل الحساب</button>
+      </form>
+    </div>
+  </div>
+
+
+    <!------------------------------------------ */
+    /* ------LANDING------------------------ */
+    /* ---------------------------------------- */ -->
+
+    <div class="QAlanding ">
+        <div class="container b d">
+
+            <div class="item  b d d n">
+                <img src="../img/Q_A/Rectangle 387.png" alt="Q_A">
+            </div>
+
+            <div class="go2next b d">
+                <h2 dir="rtl"> الأسئلة الشائعة </h2>
+                <a href="">
+
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------------------------------ */
+      /* ------contact us---------------------- */
+    /* --------------------------------------- */ -->
+
+    <section  class="QAS b d" id=" ">
+        <div class="container b d">
+
+            <ul id="qa">
+
+<!--1 أين مقر مؤسسة طلبي؟  -->
+                <li class="qaContainer   " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p>أين مقر مؤسسة طلبي؟ </p>
+                        <i class="fa-solid fa-location-dot ico"></i>
+                    </div>
+                    <p class="answer disNon">- مدينة الرياض فقط</p>
+                </li>
+
+<!--2 كيف أربط متجري مع طلبي؟  -->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p>كيف أربط متجري مع طلبي؟ </p>
+                        <i class="fa-solid fa-link ico"></i>
+                    </div>
+                    <p class="answer disNon">- عن طريق اتباع الخطوات التالية: <br>
+                        1- التسجيل في موقع أو تطبيق طلبي <br>
+                        2-التواصل عن طريق الايميل التالي <a href="mailto:info@Talaby.sa">info@Talaby.sa</a>
+                    </p>
+                </li>
+
+<!-- هل يوجد دفع عند الإستلام؟ 3-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> هل يوجد دفع عند الإستلام؟ </p>
+                        <i class="fa-solid fa-hand-holding-dollar ico"></i>
+                    </div>
+                    <p class="answer disNon">- نعم</p>
+                </li>
+
+<!-- لدي متجر على الانستقرام 4-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> لدي متجر على الانستقرام ، هل أستطيع التسجيل مع طلبي؟</p>
+                        <i class="fa-brands fa-instagram ico"></i>
+                    </div>
+                    <p class="answer disNon">- نعم بشرط توفر سجل تجاري أو وثيقة العمل الحر</p>
+                </li>
+
+<!-- كم مدة التوصيل داخل الرياض؟ 5-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> كم مدة التوصيل داخل الرياض؟</p>
+                        <i class="fa-solid fa-hourglass ico"></i>
+                    </div>
+                    <p class="answer disNon">- التوصيل يتم في نفس اليوم</p>
+                </li>
+
+<!-- كيف أتتبع طلبات العملاء كمتجر؟ 6-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> كيف أتتبع طلبات العملاء كمتجر؟</p>
+                        <i class="fa-solid fa-magnifying-glass-location ico"></i>
+                    </div>
+                    <p class="answer disNon">- عن طريق لوحة التحكم الخاصة بالمتجر أو عن طريق تطبيق طلبي</p>
+                </li>
+
+<!-- كيف أستطيع تتبع حال طلبي كعميل؟ 7-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> كيف أستطيع تتبع حال طلبي كعميل؟</p>
+                        <i class="fa-regular fa-user ico"></i>
+                        <!-- <i class="fa-solid fa-magnifying-glass-location ico"></i> -->
+                    </div>
+                    <p class="answer disNon">- عن طريق إدخال رقم التتبع المرسل لكم في موقع طلبي</p>
+                </li>
+
+<!-- هل يوجد نقل مبرد؟ 8-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> هل يوجد نقل مبرد؟</p>
+                        <i class="fa-solid fa-ice-cream ico"></i>
+                    </div>
+                    <p class="answer disNon">- حاليا لا يوجد نقل مبرد</p>
+                </li>
+
+<!-- هل يوجد رسوم على الطرود المرفوضة أو المسترجعة؟ 9-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> هل يوجد رسوم على الطرود المرفوضة أو المسترجعة؟</p>
+                        <i class="fa-solid fa-comment-dollar ico"></i>
+                    </div>
+                    <p class="answer disNon">- لا يوجد حيث اننا ناخذ رسوم الطرود على الشحنات الناجحة فقط</p>
+                </li>
+
+<!-- هل يقبل طلبي المنتجات السائلة مثل المنتجات الكيميائية؟ 10-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> هل يقبل طلبي المنتجات السائلة مثل المنتجات الكيميائية؟</p>
+                        <!-- <i class="fa-brands fa-drupal ico"></i> -->
+                        <i class="fa-solid fa-hand-holding-droplet ico"></i>
+                    </div>
+                    <p class="answer disNon">- لا يقبل طلبي المنتجات السائلة
+                    </p>
+                </li>
+
+<!-- كم عدد محاولات التوصيل المتاحة لكل طرد؟ 11-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> كم عدد محاولات التوصيل المتاحة لكل طرد؟</p>
+                        <i class="fa-solid fa-3 ico"></i>
+                    </div>
+                    <p class="answer disNon">- هناك ثلاث محاولات لتوصيل الطرد الواحد ثم يتم إرجاعها إلى المتجر
+                    </p>
+                </li>
+
+<!-- هل يمكن تغيير العنوان بعد إصدار البوليصة؟ 12-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> هل يمكن تغيير العنوان بعد إصدار البوليصة؟ </p>
+                        <i class="fa-solid fa-arrows-rotate ico"></i>
+                    </div>
+                    <p class="answer disNon">- عن طريق التواصل مع الدعم الفني على الرقم التالى: <br>
+                        0534401474
+                    </p>
+                </li>
+
+<!-- ما هي أبعاد الكرتون؟ 13-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> ما هي أبعاد الكرتون؟ </p>
+                        <!-- <i class="fa-solid fa-box-open ico"></i> -->
+                        <!-- <i class="fa-solid fa-maximize ico"></i> -->
+                        <i class="fa-solid fa-ruler-combined ico"></i>
+                    </div>
+                    <p class="answer disNon">-   35×35×35 سم
+                    </p>
+                </li>
+
+<!-- ما هو أقصى وزن يقبل طلبي توصيله؟ 14-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> ما هو أقصى وزن يقبل طلبي توصيله؟ </p>
+                        <i class="fa-solid fa-weight-scale ico"></i>
+                    </div>
+                    <p class="answer disNon">-   أقصى وزن يتم قبول توصيله هو 25 كجم
+                    </p>
+                </li>
+
+<!-- هل توفر طلبي منتجات تغليف؟ 15-->
+                <!-- <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> هل توفر طلبي منتجات تغليف؟ </p>
+                        <i class="fa-solid fa-square-parking ico"></i>
+                        <i class="fa-solid fa-box-open ico"></i>
+                        <i class="fa-solid fa-boxes-packing"></i>
+                    </div>
+                    <p class="answer disNon">- نعم توفر طلبي منتجات التغليف مجانًا ويمكنكم طلبها عن طريق الايميل التالي: 
+                        <a href="mailto:info@Talaby.sa">info@Talaby.sa</a>
+                    </p>
+                </li> -->
+
+<!-- ما هو الحل في حال ضياع أو تلف الشحنة؟ 15-->
+                <li class="qaContainer  " id="qaContainer ">
+                    <div class="qustion ">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p> ما هو الحل في حال ضياع أو تلف الشحنة؟ </p>
+                        <i class="fa-regular fa-circle-xmark ico"></i>
+                    </div>
+                    <p class="answer disNon">- يتم إرسال رقم البوليصة على الايميل التالي: 
+                        <a href="mailto:info@Talaby.sa">info@Talaby.sa</a> <br>
+                        ونعدكم بحل المشكلة في أقرب وقت
+                    </p>
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!------------------------------------------ */
+    /* ------FOOTER--------------------------- */
+    /* ---------------------------------------- */ -->
+
+    <footer>
+        <div class="cont-foot">
+            <div class="links">
+                <a href="04_about_Us.html">من نحن</a>
+                <a href="02_contact_Us.html"> اتصل بنا</a>
+                <a href="03_mnadeb.html">انضم إلى فريق المناديب </a>
+            </div>
+
+            <div class="links">
+                <a href="05_ِQ_A.html">الأسئلة الشائعة</a>
+                <a href="06_Privacy.html">سياسة الخصوصية</a>
+                <a href="#">حماية حقوق المستفيدين</a>
+            </div>
+
+            <div class="social-footer b-d">
+                <div class="social">
+                    <!-- <img src="img/social/تويتر.png" alt="تويتر" > -->
+                    <a href="#" title="الهاتف"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" title="البريد"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="تويتر"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="#"><img src="../img/app-store.png" alt="" /></a>
+                <a href="#"><img src="../img/google-play.png" alt="" /></a>
+            </div>
+        </div>
+
+        <!-- ----- -->
+
+        <p>
+            جميع الحقوق محفوظة
+            <span>لطلبي</span>
+            <span> © 2022 </span>
+            <!-- <span> | </span>
+            <span>Developed by </span>
+            <a href="#">tawarserty </a> -->
+        </p>
+
+        <!-- ----- -->
+
+        <img src="../img/footer-left.png" alt="" />
+    </footer>
+</body>
+
+</html>

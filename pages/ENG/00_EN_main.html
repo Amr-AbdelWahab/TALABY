@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- google-fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Cairo:wght@200;300&family=Great+Vibes&family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- normalize -->
+  <link rel="stylesheet" href="../../CSS/normalize.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../CSS/all.min.css" />
+  <!-- My style -->
+  <link rel="stylesheet" href="../../CSS/3amr.css" />
+  <link rel="stylesheet" href="../../CSS/style.css" />
+  <link rel="stylesheet" href="../../CSS/mob_Style.css" />
+  <link rel="stylesheet" href="../../CSS/max1200.css" />
+  <link rel="stylesheet" href="../../CSS/ENstyle.css" />
+  <link rel="stylesheet" href="../../CSS/popUp.css" />
+
+  <!-- java script -->
+  <script src="../../js/main.js" defer></script>
+  <script src="../../js/api.js" defer></script>
+  <script src="../../js/logPopUp.js" defer></script>
+
+  <title>TALABY</title>
+</head>
+
+<body dir="ltr" data-lang="EN">
+  <header>
+    <!------------------------------------------ */
+/* ------NAV BAR------------------------ */
+/* ---------------------------------------- */ -->
+
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <p>
+            <a href="#"><img src="../../../img/logo.png" alt="" /></a>
+          </p>
+          <p></p>
+          <p>Parcel delivery solutions</p>
+        </div>
+
+        <div class="ham" id="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="" id="links">
+          <div class="overlay"></div>
+          <li>
+            <a id="login">Merchant Login <span>Merchant Login</span></a>
+          </li>
+          <li>
+            <a id="logUp">Merchant signUp <span>Merchant signUp </span> </a>
+          </li>
+          <li>
+            <a href="pages/07_partners.html">TALABY Partners <span>TALABY Partners</span></a>
+          </li>
+          <li>
+            <a href="../../index.html">العربية <span>العربية</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- !---------------------------------------
+  !----------Login Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-login op en" id="overlay-login">
+    <div class="login-content">
+      <span class="close" id="closePopUpLogin">X</span>
+      <h3>Merchant Login</h3>
+      <br />
+      <form action="pages/00_loginData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">UserName</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password" class="label">Password</label>
+          <input type="password" id="password" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- !---------------------------------------
+  !----------LogUp Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-logUp op en" id="overlay-logUp">
+    <div class="logUp-content">
+      <span class="close" id="closePopUpLogUp">X</span>
+      <h3>Create Merchant Account </h3>
+      <br />
+      <form action="pages/00_logUpData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">UserName</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Email -->
+        <div class="input-group">
+          <label for="userEmail" class="label">Email</label>
+          <input type="email" id="userEmail" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password1" class="label">Password</label>
+          <input type="password" id="password1" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password2" class="label">Confirm password</label>
+          <input type="password" id="password2" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!------------------------------------------ */
+/* ------LANDING------------------------ */
+/* ---------------------------------------- */ -->
+
+  <main class="landing">
+    <div class="container b d">
+
+      <div class="item b d d n">
+        <img src="../../img/lnd/lnd1.png" alt="" />
+        <img src="../../img/lnd/lnd2.png" alt="" />
+        <img src="../../img/lnd/lnd3.png" alt="" />
+      </div>
+
+      <div class="tard b d d n">
+        <h1>
+          Delivering your store's
+          <br />
+          Parcels to customers
+          <br />
+          on the same day
+          
+        </h1>
+        <span class="packError" id="packError"></span>
+        <input id="trackerID" type="text" placeholder="Track your Parcel here" value="" />
+        <button id="btnTrackMyPack">Track The Parcel</button>
+        <div class="appLink b d">
+          <a href="#"><img src="../../img/app-store.png" alt="" /></a>
+          <a href="#"><img src="../../img/google-play.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- !---------------------------------------
+!----------package-tracking----------------
+!------------------------------------------->
+  <div class="overlay-response package-tracking op en dis Non" id="packageTracking">
+    <div class="trcking-container">
+      <span class="close" id="closePopUp">X</span>
+
+      <h3>barcode : <span id="userBarcode" class=""></span></h3>
+
+      <!-- package info -->
+      <div class="packInfo box disNon">
+        <h3>Package info.</h3>
+        <h4>weight: <span id="weight"></span></h4>
+        <h4>length: <span id="length"></span></h4>
+        <h4>width: <span id="width"></span></h4>
+        <h4>height: <span id="height"></span></h4>
+        <h4>quantity <span id="quantity"></span></h4>
+      </div>
+      <!-- Sender Info -->
+      <div class="packInfo box disNon">
+        <h3>Sender Info.</h3>
+        <h4>Sender Name: <span id="senderName"></span></h4>
+        <h4>Phone number: <span id="senderPhone"></span></h4>
+      </div>
+      <!-- بيانات الاستقبال -->
+      <div class="packInfo box disNon">
+        <h3>بيانات الاستقبال</h3>
+        <h4>اسم المستقبل: <span id="receiverName"></span></h4>
+        <h4>رقم الهاتف: <span id="receiverPhone"></span></h4>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------ */
+/* ------SECTION 1--------------------- */
+/* ---------------------------------------- */ -->
+
+  <section class="sec1 b d">
+    <div class="container b d">
+      <div class="item itemCarMob b d d n">
+        <img src="../../img/carMob/carMob1.png" alt="" />
+        <img src="../../img/carMob/carMob2.png" alt="" />
+        <img src="../../img/carMob/carMob3.png" alt="" />
+      </div>
+
+      <div class="description b d">
+        <h2 dir="ltr">
+          TALABY App is available for IOS and Android users
+          <br />
+          to enjoy many of the following features:
+        </h2>
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>Receiving and creating orders
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>Managing Parcels and issuing policies
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>Adding your store logo
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>Tracking your Parcels
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>Instant notification of order status 
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>Knowing available pick-up places
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-dot"></i>Detailed reports on each Parcel
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------ */
+/* ------SECTION 2--------------------- */
+/* ---------------------------------------- */ -->
+
+  <section class="sec2">
+    <div class="container">
+      <h2>Our Advantages</h2>
+
+      <div class="features">
+        <!-- 01- -->
+        <div class="card logo1">
+          <div class="cardLogo">
+            <img src="../../img/Why/01-اسعار/01-اسعار0.png" alt="Competitive prices" />
+            <img src="../../img/Why/01-اسعار/01-اسعار0.png" alt="" />
+            <img src="../../img/Why/01-اسعار/01-اسعار1.png" alt="" />
+          </div>
+          <h3>Competitive prices</h3>
+          <p>
+            Based on the average number of Parcels<br />
+            per month, the price is determined
+          </p>
+        </div>
+
+        <!-- 02- -->
+        <div class="card logo2">
+          <div class="cardLogo">
+            <img src="../../img/Why/02-التوصيل/02-التوصيل.png" alt="Fast Delivery" />
+            <img src="../../img/Why/02-التوصيل/02-التوصيل0.png" alt="Fast Delivery" />
+            <img src="../../img/Why/02-التوصيل/02-التوصيل1.png" alt="Fast Delivery" />
+          </div>
+          <h3>Fast Delivery</h3>
+          <p>
+            Parcels are delivered<br />
+            within 24 hours
+          </p>
+        </div>
+
+        <!-- 03- -->
+        <div class="card logo3">
+          <div class="cardLogo">
+            <img src="../../img/Why/03-الطرود/03-الطرود.png" alt="Successful parcels" />
+            <img src="../../img/Why/03-الطرود/03-الطرود0.png" alt="Successful parcels" />
+            <img src="../../img/Why/03-الطرود/03-الطرود1.png" alt="Successful parcels" />
+          </div>
+          <h3>Successful parcels</h3>
+          <p>
+            Only the delivered parcels<br />
+            are paid
+          </p>
+        </div>
+
+        <!-- 04- -->
+        <div class="card logo4">
+          <div class="cardLogo">
+            <img src="../../img/Why/04-الربط/04-الربط.png" alt="linking" />
+            <img src="../../img/Why/04-الربط/04-الربط0.png" alt="linking" />
+            <img src="../../img/Why/04-الربط/04-الربط1.png" alt="linking" />
+          </div>
+          <h3>Multiple linking methods</h3>
+          <p>
+            We offer direct and fast connectivity <br />
+            with all e-commerce <br />
+            systems (API) <span></span>
+          </p>
+        </div>
+
+        <!-- 05- -->
+        <div class="card logo5">
+          <div class="cardLogo b d">
+            <img src="../../img/Why/05-خدمة/05-خدمة.png" alt=" Customer Service" />
+            <img src="../../img/Why/05-خدمة/05-خدمة0.png" alt=" Customer Service" />
+            <img src="../../img/Why/05-خدمة/05-خدمة1.png" alt=" Customer Service" />
+            <img src="../../img/Why/05-خدمة/05-خدمة2.png" alt=" Customer Service" />
+          </div>
+          <h3>Customer Service</h3>
+          <p>
+            In TALABY, we work to provide<br />
+            our customers with professional<br />
+            and best services
+          </p>
+        </div>
+
+        <!-- 06-  -->
+        <div class="card logo6">
+          <div class="cardLogo">
+            <img src="../../img/Why/06-الدفع/06-الدفع.png" alt=" payment " />
+            <img src="../../img/Why/06-الدفع/06-الدفع0.png" alt=" payment " />
+            <img src="../../img/Why/06-الدفع/06-الدفع1.png" alt=" payment " />
+          </div>
+          <h3>Flexible payment methods</h3>
+          <p>
+            Bank Transfer<br />
+            Cash payment <br />
+            POS Devices
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------ */
+/* ------LAST SECTION------------------------ */
+/* ---------------------------------------- */ -->
+
+  <div class="last b-d">
+  </div>
+
+  <!------------------------------------------ */
+/* ------FOOTER--------------------------- */
+/* ---------------------------------------- */ -->
+
+  <footer>
+    <div class="cont-foot">
+      <div class="links">
+        <a href="../ENG/04_EN_about_Us.html">About us</a>
+        <a href="../ENG/02_EN_contact_Us.html">Contact Us</a>
+        <a href="../ENG/03_EN_mnadeb.html">Join our Team </a>
+      </div>
+
+      <div class="links">
+        <a href="../ENG/05_ِEN_Q_A.html">FAQs</a>
+        <a href="../06_Privacy.html">Privacy policy</a>
+        <a href="#">Protection of the rights of beneficiaries</a>
+      </div>
+
+      <div class="social-footer b-d">
+        <div class="social">
+          <a href="#" title="phone"><i class="fa-solid fa-phone"></i></a>
+          <a href="#" title="email"><i class="fa-regular fa-envelope"></i></a>
+          <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <a href="#"><img src="../../img/app-store.png" alt="" /></a>
+        <a href="#"><img src="../../img/google-play.png" alt="" /></a>
+      </div>
+    </div>
+
+    <!-- ----- -->
+
+    <p>
+      © All Rights Reserved for
+      <span>TALABY</span>
+      <span></span>
+      <span>  |  </span>
+      <span> 2022 </span>
+    </p>
+
+    <!-- ----- -->
+
+    <img class="footImg" src="../../img/footer-left.png" alt="" />
+  </footer>
+</body>
+
+</html>

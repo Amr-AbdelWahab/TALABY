@@ -227,11 +227,12 @@ main.landing{
     left: 50%;
 
 }
-.landing .item:hover img[src="img/lnd/lnd2.png"] {
+.landing .item:hover img:nth-child(2)
+{
 top: 48% !important;
 left: 45%;
 }
-.landing .item:hover img[src="img/lnd/lnd3.png"] {
+.landing .item:hover img:nth-child(3) {
 top: 44%;
 }
 
@@ -349,11 +350,11 @@ section.sec1 .container .item img{
     top: 50%;
     left: 50%;
 }
-section.sec1 .container .item:hover img[src="img/carMob/carMob2.png"] {
+section.sec1 .container .item:hover img:nth-child(2) {
 top: 55% !important;
 left: 45%;
 }
-section.sec1 .container .item:hover img[src="img/carMob/carMob3.png"] {
+section.sec1 .container .item:hover img:nth-child(3) {
 top: 45%;
 }
 
@@ -698,8 +699,7 @@ footer p span:nth-child(3) {
     margin: 010px;
 }
 
-footer img[src="img/footer-left.png"],
-footer img[src="../img/footer-left.png"]{
+footer .footImg{
     display: inline-block;
     height: 100%;
     position: absolute;

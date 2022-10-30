@@ -12,6 +12,8 @@ let infoBoxes = document.querySelectorAll('.box');
 let inputTrackingBarcode = document.getElementById("trackerID");
 let packError = document.getElementById("packError");
 
+let bodyLang = document.querySelector('body').dataset.lang;
+console.log(bodyLang);
 
 //Track My Pack
 let userBarcodeInput;
@@ -22,14 +24,17 @@ btnTrackMyPack.addEventListener("click", trackMyPack);
 function trackMyPack() {
   userBarcodeInput = inputTrackingBarcode.value;
   if ( userBarcodeInput == "") {
+    if (bodyLang) {
+      packError.innerHTML = "*please insert the Package number"
+    }else{
     packError.innerHTML = "*برجاء إدخال رقم الطرد"
+    }
   }else{
     packError.innerHTML = ""
     fetchPackageData();
     openPopUp();
     }
 }
-
 
 
 function fetchPackageData  (){
@@ -60,9 +65,10 @@ function fetchPackageData  (){
         document.getElementById("weight").innerHTML = data.width + " كجم";
         document.getElementById("length").innerHTML = data.length + " سم";
         document.getElementById("width").innerHTML = data.width + " سم";
+        // document.getElementById("height").innerHTML = data.height + " سم";
+        // document.getElementById("quantity").innerHTML = data.quantity ;
     
         //* Sender Name
-        // let senderNameUser = data.senderFirstName +" "+ data.senderMiddleName;
         document.getElementById("senderName").innerHTML = data.fullSenderName;
         document.getElementById("senderPhone").innerHTML = data.senderPhone;
     

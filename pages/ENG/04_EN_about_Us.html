@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google-fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Cairo:wght@200;300&family=Great+Vibes&family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <!-- My style -->
+    <link rel="stylesheet" href="../CSS/3amr.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/mob_Style.css" />
+    <!-- contact Us -->
+    <link rel="stylesheet" href="../CSS/contact_Us.css" />
+    <!-- مناديب -->
+    <link rel="stylesheet" href="../CSS/mnadeb.css" />
+    <!-- About Us -->
+    <link rel="stylesheet" href="../CSS/About_Us.css" />
+    
+    <link rel="stylesheet" href="../CSS/max1200.css">
+    <link rel="stylesheet" href="../CSS/popUp.css" />
+
+    <!-- java script -->
+    <script src="../js/main.js" defer></script>
+    <script src="../js/logPopUp.js" defer></script>
+    
+    <title>TALABY_About Us</title>
+</head>
+
+<body dir="rtl">
+    <header>
+   <!------------------------------------------ */
+    /* ------NAV BAR------------------------ */
+    /* --------------------------------------- */ -->
+
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <p>
+                        <a href="../index.html"><img src="../img/logo.png" alt="" /></a>
+                    </p>
+                    <p></p>
+                    <p>حلول توصيل الطرود</p>
+                </div>
+
+                <div class="ham" id="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="" id="links">
+                    <div class="overlay"></div>
+                    <li>
+                        <a id="login">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a>
+                    </li>
+                    <li>
+                        <a id="logUp">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a>
+                    </li>
+                    <li>
+                        <a href="07_partners.html">شركاء طلبي <span>شركاء طلبي</span></a>
+                    </li>
+                    <li>
+                        <a href="#">English <span>English</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+  <!-- !---------------------------------------
+  !----------Login Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-login op en" id="overlay-login">
+    <div class="login-content">
+      <span class="close" id="closePopUpLogin">X</span>
+      <h3>تسجيل الدخول</h3>
+      <br />
+      <form action="00_loginData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password" class="label">كلمة المرور</label>
+          <input type="password" id="password" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل دخول</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- !---------------------------------------
+  !----------LogUp Form---------------------
+  !------------------------------------------->
+
+  <div class="overlay-logUp op en" id="overlay-logUp">
+    <div class="logUp-content">
+      <span class="close" id="closePopUpLogUp">X</span>
+      <h3>إنشاء حساب كتاجر</h3>
+      <br />
+      <form action="00_logUpData.html" id="form">
+        <!-- * Username -->
+        <div class="input-group">
+          <label for="username" class="label">اسم المستخدم</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Email -->
+        <div class="input-group">
+          <label for="userEmail" class="label">البريد الاكتروني</label>
+          <input type="email" id="userEmail" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password1" class="label">كلمة المرور</label>
+          <input type="password" id="password1" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Password -->
+        <div class="input-group">
+          <label for="password2" class="label">اعادة كلمة المرور</label>
+          <input type="password" id="password2" class="input" />
+          <span class="error-msg"></span>
+        </div>
+        <br>
+        <!-- * Submit -->
+        <button class="button" type="submit">تسجيل الحساب</button>
+      </form>
+    </div>
+  </div>
+
+    <!------------------------------------------ */
+    /* ------LANDING------------------------ */
+    /* ---------------------------------------- */ -->
+
+    <div class="aboutLanding aboutL b d">
+        <div class="container b d">
+
+
+            <div class="item cont b d ">
+                <img src="../img/about_us/about/about0.png" alt="" />
+                <img src="../img/about_us/about/about1.png" alt="" />
+                <img src="../img/about_us/about/about2.png" alt="" />
+            </div>
+
+            <div class="description b d">
+                <h2>نبذة عنا:</h2>
+                <p>
+                    <span>طلبي</span>
+                    تعمل كحلقة وصل ما بين المتجر والعميل <br>
+                    لإيصال الطرود بسرعة عالية <br>
+                    وبأسعار تنافسية
+                </p>
+                <a href="#goNext" class="seeMore">
+                    <i class="fa-solid fa-arrow-down-short-wide"></i>
+                    رؤية المزيد
+                </a>
+            </div>
+        </div>
+        <div id="goNext"></div>
+    </div>
+
+    <!------------------------------------------ */
+    /* ------contact us----------------------- */
+    /* --------------------------------------- */ -->
+
+    <div class="aboutLanding aboutA  b d" id="">
+        <div class="container b d">
+            <div class="desCont">
+            
+<!-- رؤيتنا -->
+                <div class="description">
+                    <h2> رؤيتنا:</h2>
+                    <p>
+                        أن نوفر خدمات لوجستية متكاملة ومرنة <br><br>
+                        تسهل التجارة الالكترونية لمنشأتك
+                    </p>
+                    
+                </div>
+
+<!-- نستهدف -->
+                <div class="description">
+                    <h2> نستهدف:</h2>
+                    <p>المشاريع متناهية الصغر</p>
+                    <p>المشاريع الناشئة</p>
+                    <p>المشاريع المتوسطة</p>
+                </div>
+
+<!-- رسالتنا -->
+                <div class="description">
+                    <h2> رسالتنا:</h2>
+                    <p>
+                        أن نكبر وننجح معاً
+                    </p>
+                    
+                    <a href="#goNext2" class="seeMore">
+                        <i class="fa-solid fa-arrow-down-short-wide"></i>
+                        رؤية المزيد
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="item cont b d ">
+                <img src="../img/about_us/up/up0.png" alt="" />
+                <img src="../img/about_us/up/up1.png" alt="" />
+                <img src="../img/about_us/up/up2.png" alt="" />
+            </div>
+    
+        </div>
+    </div>
+
+
+    <!------------------------------------------ */
+    /* -------services ------------------------ */
+    /* --------------------------------------- */ -->
+
+    <div id="goNext2"></div>
+
+    <section class=" services">
+        <div class="container">
+            <h2>لماذا نحن ؟</h2>
+
+            <div class="features">
+<!-- 01-استلام -->
+                <div class="card serv1">
+                    <div class="cardLogo">
+                        <!-- <img src="../img/about_us/services/استلام/استلام.png" alt=" استلام"> -->
+                        <img src="../img/about_us/services/استلام/استلام0.png" alt=" استلام">
+                        <img src="../img/about_us/services/استلام/استلام1.png" alt=" استلام">
+                    </div>
+                    <h3> استلام</h3>
+                    <p> 
+                        نستلم المنتجات   <br> 
+                        من متاجركم 
+                    </p>
+                </div>
+
+<!-- 02-استقبال -->
+                <div class="card serv2">
+                    <div class="cardLogo">
+                        <img src="../img/about_us/services/استقبال/استقبال0.png" alt=" استقبال">
+                        <img src="../img/about_us/services/استقبال/استقبال1.png" alt=" استقبال">
+                    </div>
+                    <h3>  استقبال</h3>
+                    <p> 
+                        نستقبل منتجاتكم   <br> 
+                        في مقرنا
+                    </p>
+                </div>
+
+<!-- 03-توصيل -->
+                <div class="card serv3">
+                    <div class="cardLogo">
+                        <img src="../img/about_us/services/توصيل/توصيل0.png" alt=" توصيل">
+                        <img src="../img/about_us/services/توصيل/توصيل1.png" alt=" توصيل">
+                    </div>
+                    <h3> توصيل </h3>
+                    <p> 
+                        توصيل الطرود  <br> 
+                        في مدينة الرياض فقط
+                    </p>
+                </div>
+
+<!-- 04-تواصل -->
+                <div class="card serv4">
+                    <div class="cardLogo">
+                        <img src="../img/about_us/services/تواصل/تواصل0.png" alt=" تواصل">
+                        <img src="../img/about_us/services/تواصل/تواصل1.png" alt=" تواصل">
+                    </div>
+                    <h3> تواصل</h3>
+                    <p> 
+                        التواصل مع عملائنا <br> 
+                        ومساعدتهم <br>
+                        والرد علي استفساراتهم   
+                    </p>
+                </div>
+
+<!-- 05-تتبع-->
+                <div class="card serv5">
+                    <div class="cardLogo">
+                        <img src="../img/about_us/services/تتبع/تتبع0.png" alt=" تتبع">
+                        <img src="../img/about_us/services/تتبع/تتبع1.png" alt=" تتبع">
+                        <img src="../img/about_us/services/تتبع/تتبع2.png" alt=" تتبع">
+                    </div>
+                    <h3> تتبع</h3>
+                    <p> 
+                        تتبع الشحنات <br> 
+                        والاطلاع علي  <br>
+                        حالة الشحنة
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------------------------------ */
+    /* ------FOOTER--------------------------- */
+    /* ---------------------------------------- */ -->
+
+    <footer>
+        <div class="cont-foot">
+            <div class="links">
+                <a href="#">من نحن</a>
+                <a href="02_contact_Us.html"> اتصل بنا</a>
+                <a href="03_mnadeb.html">انضم إلى فريق المناديب </a>
+            </div>
+
+            <div class="links">
+                <a href="05_ِQ_A.html">الأسئلة الشائعة</a>
+                <a href="06_Privacy.html">سياسة الخصوصية</a>
+                <a href="#">حماية حقوق المستفيدين</a>
+            </div>
+
+            <div class="social-footer b-d">
+                <div class="social">
+                    <!-- <img src="img/social/تويتر.png" alt="تويتر" > -->
+                    <a href="#" title="الهاتف"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" title="البريد"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="تويتر"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="#"><img src="../img/app-store.png" alt="" /></a>
+                <a href="#"><img src="../img/google-play.png" alt="" /></a>
+            </div>
+        </div>
+
+        <!-- ----- -->
+
+        <p>
+            جميع الحقوق محفوظة
+            <span>لطلبي</span>
+            <span> © 2022 </span>
+            <!-- <span> | </span>
+            <span>Developed by </span>
+            <a href="#">tawarserty </a> -->
+        </p>
+
+        <!-- ----- -->
+
+        <img src="../img/footer-left.png" alt="" />
+    </footer>
+</body>
+
+</html>
