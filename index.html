@@ -170,6 +170,7 @@
           في نفس اليوم
         </h1>
         <span class="packError" id="packError"></span>
+        <!-- value="120515066428" -->
         <input id="trackerID" type="text" placeholder="ادخل رقم الطرد" value="" />
         <button id="btnTrackMyPack">تتبع الطرد</button>
         <div class="appLink b d">
@@ -180,7 +181,7 @@
     </div>
   </main>
 
-  <!-- !---------------------------------------
+<!-- !---------------------------------------
 !----------package-tracking----------------
 !------------------------------------------->
   <div class="overlay-response package-tracking op en dis Non" id="packageTracking">
@@ -195,18 +196,24 @@
         <h4>الوزن: <span id="weight"></span></h4>
         <h4>الطول: <span id="length"></span></h4>
         <h4>العرض <span id="width"></span></h4>
+        <h4>الإرتفاع: <span id="height"></span></h4>
+        <h4>الكمية: <span id="quantity"></span></h4>
+        <h4>سعرالتوصيل: <span id="cost"></span></h4>
       </div>
       <!-- بيانات الارسال -->
       <div class="packInfo box disNon">
-        <h3>بيانات الارسال</h3>
+        <h3> المرسل</h3>
         <h4>اسم المرسل: <span id="senderName"></span></h4>
         <h4>رقم الهاتف: <span id="senderPhone"></span></h4>
       </div>
       <!-- بيانات الاستقبال -->
       <div class="packInfo box disNon">
-        <h3>بيانات الاستقبال</h3>
+        <h3>المستقبال</h3>
         <h4>اسم المستقبل: <span id="receiverName"></span></h4>
         <h4>رقم الهاتف: <span id="receiverPhone"></span></h4>
+        <h4>البلد: <span id="receiverAddressCountry"></span></h4>
+        <h4>المدينة: <span id="receiverAddressRegion"></span></h4>
+        <h4>القرية: <span id="receiverAddressVillage"></span></h4>
       </div>
     </div>
   </div>
@@ -405,9 +412,6 @@
       جميع الحقوق محفوظة
       <span>لطلبي</span>
       <span> © 2022 </span>
-      <!-- <span>  |  </span>
-            <span>Developed by </span>
-            <a href="#">tawarserty </a> -->
     </p>
 
     <!-- ----- -->

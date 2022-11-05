@@ -269,6 +269,7 @@ top: 44%;
 }
 
 .landing .tard button {
+    color: var(--main-TXT-clr);
     font-size: 1.2rem;
     font-weight: 600;
     padding: inherit;
@@ -643,13 +644,15 @@ footer .links a:hover {
 .social a {
     display: inline-block;
     margin: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .social i {
+    display: inline-block;
     color: white;
-    font-size: 1.1rem;
-    height: 2.0rem;
-    width: 2.0rem;
-    line-height: 2.0rem;
+    font-size: 1.2rem;
+    padding: 7px;
     vertical-align: middle;
     text-align: center;
     border: 2px solid transparent;

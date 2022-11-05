@@ -57,24 +57,42 @@ function fetchPackageData  (){
         infoBoxes.forEach((box) =>{
           box.classList.remove('disNon');
         });
+
+
         //! Barcode number
         document.getElementById("userBarcode").innerHTML = data.barcode;
         document.getElementById("userBarcode").classList.remove('errText');
 
-        //* Pack Info
-        document.getElementById("weight").innerHTML = data.width + " كجم";
-        document.getElementById("length").innerHTML = data.length + " سم";
-        document.getElementById("width").innerHTML = data.width + " سم";
-        // document.getElementById("height").innerHTML = data.height + " سم";
-        // document.getElementById("quantity").innerHTML = data.quantity ;
-    
-        //* Sender Name
-        document.getElementById("senderName").innerHTML = data.fullSenderName;
-        document.getElementById("senderPhone").innerHTML = data.senderPhone;
-    
-        //* Receiver Name
-        document.getElementById("receiverName").innerHTML = data.fullReceiverName;
-        document.getElementById("receiverPhone").innerHTML = data.receiverPhone;
+        if (bodyLang) {
+          //* Pack Info
+          document.getElementById("weight").innerHTML = data.width + " kg.";
+          document.getElementById("length").innerHTML = data.length + " cm.";
+          document.getElementById("width").innerHTML = data.width + " cm.";
+          document.getElementById("height").innerHTML = data.height + " cm.";
+          document.getElementById("quantity").innerHTML = data.quantity ;
+          document.getElementById("cost").innerHTML = data.cost + " SAR.";
+
+        }else{
+          //* Pack Info
+          document.getElementById("weight").innerHTML = data.width + " كجم";
+          document.getElementById("length").innerHTML = data.length + " سم";
+          document.getElementById("width").innerHTML = data.width + " سم";
+          document.getElementById("height").innerHTML = data.height + " سم";
+          document.getElementById("quantity").innerHTML = data.quantity ;
+          document.getElementById("cost").innerHTML = data.cost + " ريال";
+        }
+              
+          //* Sender 
+          document.getElementById("senderName").innerHTML = data.fullSenderName;
+          document.getElementById("senderPhone").innerHTML = data.senderPhone;
+      
+          //* Receiver 
+          document.getElementById("receiverName").innerHTML = data.fullReceiverName;
+          document.getElementById("receiverPhone").innerHTML = data.receiverPhone;
+          document.getElementById("receiverAddressCountry").innerHTML = data.destinationAddress.country;
+          document.getElementById("receiverAddressRegion").innerHTML = data.destinationAddress.arabicRegionName;
+          document.getElementById("receiverAddressVillage").innerHTML = data.destinationAddress.arabicVillageName;
+
       }
     });
 }

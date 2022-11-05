@@ -169,6 +169,7 @@
           
         </h1>
         <span class="packError" id="packError"></span>
+        <!-- value="120515066428" -->
         <input id="trackerID" type="text" placeholder="Track your Parcel here" value="" />
         <button id="btnTrackMyPack">Track The Parcel</button>
         <div class="appLink b d">
@@ -179,7 +180,7 @@
     </div>
   </main>
 
-  <!-- !---------------------------------------
+<!-- !---------------------------------------
 !----------package-tracking----------------
 !------------------------------------------->
   <div class="overlay-response package-tracking op en dis Non" id="packageTracking">
@@ -191,23 +192,28 @@
       <!-- package info -->
       <div class="packInfo box disNon">
         <h3>Package info.</h3>
-        <h4>weight: <span id="weight"></span></h4>
-        <h4>length: <span id="length"></span></h4>
-        <h4>width: <span id="width"></span></h4>
-        <h4>height: <span id="height"></span></h4>
-        <h4>quantity <span id="quantity"></span></h4>
+        <h4>Weight: <span id="weight"></span></h4>
+        <h4>Length: <span id="length"></span></h4>
+        <h4>Width: <span id="width"></span></h4>
+        <h4>Height: <span id="height"></span></h4>
+        <h4>Quantity: <span id="quantity"></span></h4>
+        <h4>Delivery Cost: <span id="cost"></span></h4>
       </div>
       <!-- Sender Info -->
       <div class="packInfo box disNon">
         <h3>Sender Info.</h3>
         <h4>Sender Name: <span id="senderName"></span></h4>
-        <h4>Phone number: <span id="senderPhone"></span></h4>
+        <h4>Phone Number: <span id="senderPhone"></span></h4>
       </div>
       <!-- بيانات الاستقبال -->
       <div class="packInfo box disNon">
-        <h3>بيانات الاستقبال</h3>
-        <h4>اسم المستقبل: <span id="receiverName"></span></h4>
-        <h4>رقم الهاتف: <span id="receiverPhone"></span></h4>
+        <h3>Receiver</h3>
+        <h4>Receiver Name: <span id="receiverName"></span></h4>
+        <h4>Phone Number: <span id="receiverPhone"></span></h4>
+        <h4>Country: <span id="receiverAddressCountry"></span></h4>
+        <h4>Region: <span id="receiverAddressRegion"></span></h4>
+        <h4>Village: <span id="receiverAddressVillage"></span></h4>
+
       </div>
     </div>
   </div>
@@ -226,32 +232,18 @@
 
       <div class="description b d">
         <h2 dir="ltr">
-          TALABY App is available for IOS and Android users
-          <br />
-          to enjoy many of the following features:
+          TALABY App is available for <br>
+          IOS and Android users to <br>
+          enjoy many of the following features:
         </h2>
         <ul>
-          <li>
-            <i class="fa-solid fa-circle-dot"></i>Receiving and creating orders
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-dot"></i>Managing Parcels and issuing policies
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-dot"></i>Adding your store logo
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-dot"></i>Tracking your Parcels
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-dot"></i>Instant notification of order status 
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-dot"></i>Knowing available pick-up places
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-dot"></i>Detailed reports on each Parcel
-          </li>
+          <li><i class="fa-solid fa-circle-dot"></i>Receiving and creating orders</li>
+          <li><i class="fa-solid fa-circle-dot"></i>Managing Parcels and issuing policies</li>
+          <li><i class="fa-solid fa-circle-dot"></i>Adding your store logo</li>
+          <li><i class="fa-solid fa-circle-dot"></i>Tracking your Parcels</li>
+          <li><i class="fa-solid fa-circle-dot"></i>Instant notification of order status</li>
+          <li><i class="fa-solid fa-circle-dot"></i>Knowing available pick-up places</li>
+          <li><i class="fa-solid fa-circle-dot"></i>Detailed reports on each Parcel</li>
         </ul>
       </div>
     </div>

@@ -32,4 +32,15 @@
   margin-right: 0;
   margin-left: 20px;
 }
+.trcking-container .box h3 {
+  left:10px;
+}
 
+@media (max-width: 767px){
+  .sec1 .description ul li{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: -1rem !important;
+    margin-bottom: 0.5rem;
+  }
+}
