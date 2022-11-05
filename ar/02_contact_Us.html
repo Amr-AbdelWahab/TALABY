@@ -20,28 +20,29 @@
     <link rel="stylesheet" href="../CSS/3amr.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/mob_Style.css">
-    <!-- contact Us -->
-    <link rel="stylesheet" href="../CSS/contact_Us.css">
-    <!-- مناديب -->
-    <link rel="stylesheet" href="../CSS/mnadeb.css">
     
     <link rel="stylesheet" href="../CSS/max1200.css">
     <link rel="stylesheet" href="../CSS/popUp.css" />
 
+    <!-- contact Us -->
+    <link rel="stylesheet" href="../CSS/contact_Us.css">
 
-  <!-- java script -->
-  <script src="../js/main.js" defer></script>
-  <script src="../js/logPopUp.js" defer></script>
+    <!-- java script -->
+    <script src="../js/main.js" defer></script>
+    <script src="../js/logPopUp.js" defer></script>
     
-    <title>TALABY_Join Us</title>
+    <title>TALABY_Contact Us</title>
 </head>
+
+
+
 
     <body dir="rtl">
         <header>
 
     <!------------------------------------------ */
     /* ------NAV BAR------------------------ */
-    /* --------------------------------------- */ -->
+    /* ---------------------------------------- */ -->
 
             <nav>
                 <div class="container">
@@ -63,7 +64,7 @@
                         <li><a id="login">تسجيل دخول التاجر <span>تسجيل دخول التاجر</span></a></li>
                         <li><a id="logUp">انشاء حساب كتاجر<span>انشاء حساب كتاجر</span> </a> </li>
                         <li><a href="07_partners.html">شركاء طلبي <span>شركاء طلبي</span></a></li>
-                        <li><a href="ENG/03_EN_mnadeb.html">English <span>English</span></a></li>
+                        <li><a href="../en/02_EN_contact_Us.html">English <span>English</span></a></li>
                     </ul>
         
                 </div>
@@ -71,7 +72,7 @@
 
         </header>
 
-
+        
 
   <!-- !---------------------------------------
   !----------Login Form---------------------
@@ -148,26 +149,28 @@
   </div>
 
 
-  <!------------------------------------------ */
+
+
+    <!------------------------------------------ */
     /* ------LANDING------------------------ */
     /* ---------------------------------------- */ -->
 
-        <div class=" b d mndob">
+        <main class="landing call">
             <div class="container b d">
 
                 <div class="item cont b d d n">
-                    <img src="../img/mnadeb/mnadeb0.png" alt="">
-                    <img src="../img/mnadeb/mnadeb1.png" alt="">
-                    <img src="../img/mnadeb/mnadeb2.png" alt="">
-                    <img src="../img/mnadeb/mnadeb3.png" alt="">
-                    <img src="../img/mnadeb/mnadeb4.png" alt="">
+                    <img src="../img/contact_us/contact0.png" alt="">
+                    <img src="../img/contact_us/contact1.png" alt="">
+                    <img src="../img/contact_us/contact2.png" alt="">
+                    <img src="../img/contact_us/contact3.png" alt="">
+                    <img src="../img/contact_us/contact4.png" alt="">
                 </div>
 
                 <div class="go2next b d">
-                    <h2 dir="rtl">  تسجيل بيانات المناديب </h2>
+                    <h2 dir="rtl">اتصل بنا </h2>
                     <a href="#contactForm">
 
-                        <di7 id="contactForm"></di7>
+                        <div id="contactForm"></div>
 
                         <i class="fa-solid fa-angle-down"></i>
                         <i class="fa-solid fa-angle-down"></i>
@@ -176,81 +179,37 @@
 
             </div>
 
-        </div>
+        </main>
 
     <!------------------------------------------ */
     /* ------contact us----------------------- */
     /* --------------------------------------- */ -->
 
-        <section  class="mandobForm b d" id=" ">
+        <section  class="sec1 contactForm b d" id=" ">
             <div class="container b d">
 
                 <form action="01_data.html" method="get" id="form">
-                    <input type="text" name="firstName" placeholder="الاسم:" required>
-                    <input type="text" name="lastName" placeholder="اسم العائلة:" required>
+                    <input type="text" name="name" placeholder="الاسم:" required>
 
                     <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" required>
                     <span id="phonError"></span>
-                    
+
                     <input type="email" name="mail" placeholder="البريد الإلكتروني:" required>
-                    <input type="text" name="address" placeholder="العنوان:" >
-
-                    <input type="number" name="ID" placeholder="رقم الهوية:"  id="idNum" onkeyup="validateIdNum()" required>
-                    <span id="idError"></span>
+                    <input type="text" name="subject" placeholder="الموضوع:" required>
+                    <textarea type="text" name="content" id="" placeholder="الرسالة:" ></textarea>
                     
-                    <input type="text" name="carType" placeholder="نوع السيارة :" required>
-                    <input type="text" name="carModel" placeholder=" موديل :" required>
-                    <input type="text" name="carNum" placeholder=" رقم اللوحة :" required>
-
-                    <div class="date">
-                        <label for="dateA"> تاريخ انتهاء الرخصة :</label>
-                        <input type="date" name="policyValid" id="dateA" required>
-                    </div>
-                    <div class="date">
-                        <label for="dateB"> تاريخ انتهاء التأمين :</label>
-                        <input type="date" name="policyValid" id="dateB" required>
-                    </div>
-                
-                    <p>من أين تعرفت علينا؟</p>
-                    <div class="radio">   
-                        <div>
-                            <input type="radio" name="knowFrom" id="Snapchat" value="Snapchat" >
-                            <label for="Snapchat">سناب شات</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="knowFrom" id="Instagram" value="Instagram" >
-                            <label for="Instagram"> انستقرام</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="knowFrom" id="Wzaeef" value="موقع وظائف" >
-                            <label for="Wzaeef"> موقع وظائف</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="knowFrom" id="Friend" value="Friend " >
-                            <label for="Friend">  صديق</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="knowFrom" id="Others" value="Others " >
-                            <label for="Others">  اخري</label>
-                        </div>
-                    </div>
-
                     <div class="subBtn">
                         <div>
                             <span id="submitError"></span>
                         </div>
                         <input type="reset" value="مسح البيانات">
-                        <input type="submit" value="تسجيل" id="submit">
-
+                        <input type="submit" value="إرسال" id="submit">
                     </div>
                 </form>
 
             </div>
         </section>
+
 
 
 
@@ -265,7 +224,7 @@
                 
                 <div class="links">
                     <a href="04_about_Us.html">من نحن</a>
-                    <a href="02_contact_Us.html"> اتصل بنا</a>
+                    <a href="#"> اتصل بنا</a>
                     <a href="03_mnadeb.html">انضم إلى فريق المناديب </a>
                 </div>
 
@@ -277,14 +236,13 @@
 
                 <div class="social-footer b-d">
                     <div class="social">
-                        <!-- <img src="img/social/تويتر.png" alt="تويتر" > -->
-                        <a href="#" title="الهاتف"><i class="fa-solid fa-phone"></i></a>
-                        <a href="#" title="البريد"><i class="fa-regular fa-envelope"></i></a>
-                        <a href="#" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" title="تويتر"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <a href="#"><img src="../img/app-store.png" alt=""></a>
-                    <a href="#"><img src="../img/google-play.png" alt=""></a>
+                        <a href="https://api.whatsapp.com/send/?phone=966534401474" title="واتساب" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:info@talaby.sa?subject=Mail from TALABY Website" title="البريد" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/talaby.sa/" title="انستجرام" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/talabysa" title="تويتر" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                  </div>
+                    <a href="https://apps.apple.com/us/app/talaby-%D8%B7%D9%84%D8%A8%D9%8A/id1635720440?l=ar" target="_blank"><img src="../img/app-store.png" alt=""></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.logestechs.customer_talaby" target="_blank"><img src="../img/google-play.png" alt=""></a>
                 </div>
 
             </div>
@@ -295,15 +253,14 @@
 
             <p>جميع الحقوق محفوظة 
                 <span>لطلبي</span> 
-                <span> © 2022 </span>
-                <!-- <span>  |  </span>
-                <span>Developed by </span>
-                <a href="#">tawarserty </a> -->
-            </p>
+                <span></span>
+                <span>  |  </span>
+                <span> 2022 </span>
+              </p>
 
             <!-- ----- -->
 
-            <img class="footImg" src="../img/footer-left.png" alt="">
+            <img class="footImg" src="../../img/footer-left.png" alt="">
             
         </footer>
 

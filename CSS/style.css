@@ -639,6 +639,7 @@ footer .links a:hover {
 }
 
 .social{
+display: flex;
 
 }
 .social a {
