@@ -67,7 +67,7 @@ function showAnswer () {
 
 //---------
 //   submit
-//-----------
+//------------
 
 //Variable
 // let submit = document.getElementById('submit');

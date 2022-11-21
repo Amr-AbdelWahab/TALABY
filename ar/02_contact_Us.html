@@ -190,23 +190,29 @@
         <section  class="sec1 contactForm b d" id=" ">
             <div class="container b d">
 
-                <form action="01_data.html" method="get" id="form">
-                    <input type="text" name="name" placeholder="الاسم:" required>
+                <form onsubmit="sendEmail(); reset(); return false;" method="get" id="form">
 
-                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" required>
+                    <input type="text" name="name" placeholder="الاسم:" id="clientName" required >
+
+                    <input type="number" name="tell" placeholder="رقم الجوال:" id="phoneNum" onkeyup="validatePhonNum()" required >
                     <span id="phonError"></span>
 
-                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" required>
-                    <input type="text" name="subject" placeholder="الموضوع:" required>
-                    <textarea type="text" name="content" id="" placeholder="الرسالة:" ></textarea>
+                    <input type="email" name="mail" placeholder="البريد الإلكتروني:" id="email" required >
+
+                    <input type="text" name="subject" placeholder="الموضوع:" id="subject" required >
+
+                    <textarea type="text" name="content" id="clientMessage" placeholder="الرسالة:" ></textarea>
                     
                     <div class="subBtn">
-                        <div>
-                            <span id="submitError"></span>
-                        </div>
+
+                        <div><span id="submitError"></span></div>
+
                         <input type="reset" value="مسح البيانات">
+
                         <input type="submit" value="إرسال" id="submit">
+
                     </div>
+
                 </form>
 
             </div>
@@ -266,6 +272,29 @@
             
         </footer>
 
-        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+          function sendEmail(){
+            Email.send({
+              SecureToken : "03d3bf96-0e84-4cbf-87e8-ee812f8d3289",
+              // To : 'info@talaby.sa , deacwad@amrabdelwahab.com',
+              // To : '3amr.abdelwahab@gmail.com , deacwad@amrabdelwahab.com',
+              To : 'info@talaby.sa',
+              From : document.getElementById('email').value,
+              Subject : document.getElementById('subject').value,
+
+              Body : "Name: " + document.getElementById('clientName').value + "<br>" +
+                        "Phone Number: " + document.getElementById('phoneNum').value + "<br>" +
+                        "E-mail: " + document.getElementById('email').value + "<br>" +
+                        "Subject: " + document.getElementById('subject').value + "<br>" +
+                        "Message: " + document.getElementById('clientMessage').value 
+            }).then(
+              message => alert(message)
+              // message => alert('Message has been successfully sent to TALABY customer service')
+            );
+          }
+        </script>
+
     </body>
 </html>
