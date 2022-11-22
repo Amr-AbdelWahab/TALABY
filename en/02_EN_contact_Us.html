@@ -271,11 +271,12 @@
         <script>
           function sendEmail(){
             Email.send({
-              SecureToken : "03d3bf96-0e84-4cbf-87e8-ee812f8d3289",
+              SecureToken : "26649814-5e37-45fa-ab78-feb02810d8fa",
               // To : 'info@talaby.sa , deacwad@amrabdelwahab.com',
               // To : '3amr.abdelwahab@gmail.com , deacwad@amrabdelwahab.com',
               To : 'info@talaby.sa',
-              From : document.getElementById('email').value,
+              // From : document.getElementById('email').value,
+              From : 'deacwad@amrabdelwahab.com',
               Subject : document.getElementById('subject').value,
 
               Body : "Name: " + document.getElementById('clientName').value + "<br>" +
